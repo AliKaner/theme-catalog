@@ -15,6 +15,9 @@ export type ThemeConfig = {
   colors: ThemeColorConfig;
   tagline: string;
   desc: string;
+  // When true the preview is rendered with a flat, gradientless, brutalist
+  // surface instead of the default soft theme-colored gradient.
+  flat?: boolean;
 };
 
 export type ViewMode = 'jukebox' | 'grid';

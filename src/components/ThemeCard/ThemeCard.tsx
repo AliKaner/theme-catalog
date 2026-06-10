@@ -63,7 +63,7 @@ const ThemeCard = (props: ThemeCardProps) => {
       </div>
 
       {/* Mock Website Preview Area */}
-      <div className={styles.previewContainer}>
+      <div className={classNames(styles.previewContainer, { [styles.flat]: theme.flat })}>
         {/* Mock Navigation Bar */}
         <header className={styles.mockHeader}>
           <div className={styles.mockLogo} style={{ fontFamily: theme.fontFamily }}>

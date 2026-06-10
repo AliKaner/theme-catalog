@@ -324,9 +324,11 @@
 
 .themeGrid {
   display: grid;
+  // No gap: cards overlap each other and fan open on hover.
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  gap: 0;
   margin-top: 16px;
+  padding: 24px 28px;
 
   @include tablet {
     grid-template-columns: repeat(2, 1fr);
@@ -334,13 +336,60 @@
 
   @include mobile {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 20px;
+    padding: 0;
   }
 }
 
 .gridItem {
   display: flex;
   justify-content: center;
+  cursor: pointer;
+  // Default: slightly shrunk and overlapping its neighbors.
+  transform: scale(0.9);
+  margin-top: -8px;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), filter 0.45s ease;
+  will-change: transform;
+
+  // Pull each non-first column to overlap the previous card.
+  &:not(:nth-child(3n + 1)) {
+    margin-left: -38px;
+  }
+
+  // The hovered card opens up, lifts above the rest, and is fully revealed.
+  &:hover {
+    transform: scale(1.14);
+    z-index: 50;
+    filter: drop-shadow(0 24px 55px rgba(0, 0, 0, 0.6));
+  }
+
+  // Push the immediate horizontal neighbours aside so the open card has room.
+  &:hover + .gridItem {
+    transform: scale(0.9) translateX(46px);
+  }
+
+  &:has(+ .gridItem:hover) {
+    transform: scale(0.9) translateX(-46px);
+  }
+
+  // On small screens fall back to a plain, non-overlapping stack.
+  @include mobile {
+    transform: none;
+    margin-top: 0;
+
+    &:not(:nth-child(3n + 1)) {
+      margin-left: 0;
+    }
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    &:hover + .gridItem,
+    &:has(+ .gridItem:hover) {
+      transform: none;
+    }
+  }
 }
 
 /* Applied Theme bottom floating banner */
