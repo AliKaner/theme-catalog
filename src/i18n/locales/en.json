@@ -16,5 +16,11 @@
     "font": "Typography",
     "activeTheme": "Active Theme",
     "previewTitle": "Mini Website Preview"
+  },
+  "export": {
+    "title": "Copy To Your Project",
+    "subtitle": "Grab the active theme in any format — pick a file from the tabs, copy it, and paste it straight into your own project.",
+    "copy": "Copy",
+    "copied": "Copied!"
   }
 }

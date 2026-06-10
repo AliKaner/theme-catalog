@@ -334,5 +334,1077 @@
     },
     "tagline": "Opulence In Every Detail",
     "desc": "Jewel-toned emerald paired with antique gold for premium, heritage-luxury experiences."
+  },
+  {
+    "id": "tuscan-afternoon",
+    "name": "Tuscan Afternoon",
+    "fontFamily": "'Spectral', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#b9603a",
+      "primaryLight": "#d99873",
+      "primaryDark": "#82401f",
+      "secondary": "#7d8c4e",
+      "secondaryLight": "#a7b47e",
+      "secondaryDark": "#535e30"
+    },
+    "tagline": "Sun-Warmed Hillside Calm",
+    "desc": "Baked clay and rolling olive groves distilled into a relaxed, earthy palette."
+  },
+  {
+    "id": "arctic-aurora",
+    "name": "Arctic Aurora",
+    "fontFamily": "'Space Grotesk', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#3ad0c4",
+      "primaryLight": "#85e6dd",
+      "primaryDark": "#1f8f86",
+      "secondary": "#5a4fcf",
+      "secondaryLight": "#8f87e3",
+      "secondaryDark": "#3a3290"
+    },
+    "tagline": "Light Dancing On Frozen Skies",
+    "desc": "Glacial teal and electric violet capture the shimmer of polar night skies."
+  },
+  {
+    "id": "velvet-dusk",
+    "name": "Velvet Dusk",
+    "fontFamily": "'DM Serif Display', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap",
+    "colors": {
+      "primary": "#4b2e5e",
+      "primaryLight": "#7a5a8d",
+      "primaryDark": "#2c193a",
+      "secondary": "#e0795f",
+      "secondaryLight": "#efab98",
+      "secondaryDark": "#b0543c"
+    },
+    "tagline": "When The Light Turns Soft",
+    "desc": "Deep plum twilight warmed by a fading ember glow for moody, romantic brands."
+  },
+  {
+    "id": "lemon-meringue",
+    "name": "Lemon Meringue",
+    "fontFamily": "'Poppins', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#f2d44e",
+      "primaryLight": "#f8e68c",
+      "primaryDark": "#c9aa1f",
+      "secondary": "#f4f1e6",
+      "secondaryLight": "#ffffff",
+      "secondaryDark": "#d6d0bb"
+    },
+    "tagline": "Bright, Sweet, And Airy",
+    "desc": "Whipped pale cream and zesty lemon for playful, optimistic interfaces."
+  },
+  {
+    "id": "midnight-harbor",
+    "name": "Midnight Harbor",
+    "fontFamily": "'Sora', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#16324f",
+      "primaryLight": "#4a6783",
+      "primaryDark": "#0a1d30",
+      "secondary": "#d8a657",
+      "secondaryLight": "#e9c68c",
+      "secondaryDark": "#a8792f"
+    },
+    "tagline": "Steady Lights On Dark Water",
+    "desc": "Inky navy depths lit by lantern gold for trustworthy, premium products."
+  },
+  {
+    "id": "rose-quartz",
+    "name": "Rose Quartz",
+    "fontFamily": "'Fraunces', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#e6a4ad",
+      "primaryLight": "#f2c8ce",
+      "primaryDark": "#bd7680",
+      "secondary": "#8d9bb0",
+      "secondaryLight": "#b6c0d0",
+      "secondaryDark": "#616e82"
+    },
+    "tagline": "Tender Tones, Quiet Strength",
+    "desc": "Soft rose and serene grey-blue create a gentle, contemporary mineral palette."
+  },
+  {
+    "id": "matcha-latte",
+    "name": "Matcha Latte",
+    "fontFamily": "'Manrope', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#8aa05a",
+      "primaryLight": "#b3c48e",
+      "primaryDark": "#5d6e38",
+      "secondary": "#e8dcc4",
+      "secondaryLight": "#f6f0e2",
+      "secondaryDark": "#c7b794"
+    },
+    "tagline": "Calm In Every Sip",
+    "desc": "Stone-ground green tea over warm oat milk for soft, wellness-minded brands."
+  },
+  {
+    "id": "copper-patina",
+    "name": "Copper Patina",
+    "fontFamily": "'Roboto Slab', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#3fae9e",
+      "primaryLight": "#7fcabf",
+      "primaryDark": "#247a6e",
+      "secondary": "#b66a3e",
+      "secondaryLight": "#d49770",
+      "secondaryDark": "#834825"
+    },
+    "tagline": "Aged Metal, Living Color",
+    "desc": "Verdigris green meets oxidized copper for an industrial, time-worn character."
+  },
+  {
+    "id": "berry-sorbet",
+    "name": "Berry Sorbet",
+    "fontFamily": "'Outfit', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#c43e74",
+      "primaryLight": "#dd7da3",
+      "primaryDark": "#8e2851",
+      "secondary": "#f6b3c2",
+      "secondaryLight": "#fbd6df",
+      "secondaryDark": "#d3849a"
+    },
+    "tagline": "Sweet, Cool, And Vivid",
+    "desc": "Bright raspberry against soft pink for energetic, youthful product design."
+  },
+  {
+    "id": "desert-bloom",
+    "name": "Desert Bloom",
+    "fontFamily": "'Newsreader', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#d98c6a",
+      "primaryLight": "#ecb69d",
+      "primaryDark": "#a85f41",
+      "secondary": "#9c7bb0",
+      "secondaryLight": "#c2aad0",
+      "secondaryDark": "#6d5180"
+    },
+    "tagline": "Life In The Driest Places",
+    "desc": "Warm clay terracotta beside a soft cactus-flower violet for organic warmth."
+  },
+  {
+    "id": "deep-sea",
+    "name": "Deep Sea",
+    "fontFamily": "'Epilogue', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#0e4d5c",
+      "primaryLight": "#3f8090",
+      "primaryDark": "#062c35",
+      "secondary": "#3fc4b5",
+      "secondaryLight": "#83ddd2",
+      "secondaryDark": "#238a7e"
+    },
+    "tagline": "Depth You Can Feel",
+    "desc": "Abyssal teal lit by bioluminescent aqua for immersive, modern interfaces."
+  },
+  {
+    "id": "autumn-orchard",
+    "name": "Autumn Orchard",
+    "fontFamily": "'Bitter', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#b5451f",
+      "primaryLight": "#d67c54",
+      "primaryDark": "#7f2f13",
+      "secondary": "#c99a2e",
+      "secondaryLight": "#e2c06f",
+      "secondaryDark": "#917019"
+    },
+    "tagline": "Harvest Hues, Honest Craft",
+    "desc": "Ripe apple red and golden pear for warm, hand-made and artisanal brands."
+  },
+  {
+    "id": "lavender-fields",
+    "name": "Lavender Fields",
+    "fontFamily": "'Crimson Pro', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#8b7bc4",
+      "primaryLight": "#b3a7dc",
+      "primaryDark": "#5f5290",
+      "secondary": "#a0b87a",
+      "secondaryLight": "#c4d4a4",
+      "secondaryDark": "#71874f"
+    },
+    "tagline": "Rows Of Quiet Color",
+    "desc": "Soft Provençal violet beside fresh field green for calm, fragrant brand moods."
+  },
+  {
+    "id": "campfire-night",
+    "name": "Campfire Night",
+    "fontFamily": "'Zilla Slab', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#e2622c",
+      "primaryLight": "#f0906a",
+      "primaryDark": "#a8431a",
+      "secondary": "#27384a",
+      "secondaryLight": "#566679",
+      "secondaryDark": "#15212e"
+    },
+    "tagline": "Warmth Against The Dark",
+    "desc": "Flickering ember orange over deep night blue for cozy, adventurous brands."
+  },
+  {
+    "id": "powder-blue",
+    "name": "Powder Blue",
+    "fontFamily": "'Work Sans', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#7fb3d5",
+      "primaryLight": "#aed1e6",
+      "primaryDark": "#52839f",
+      "secondary": "#f0e4d0",
+      "secondaryLight": "#faf3e7",
+      "secondaryDark": "#d2c0a4"
+    },
+    "tagline": "Light As A Clear Morning",
+    "desc": "Gentle sky blue over warm sand for clean, approachable everyday products."
+  },
+  {
+    "id": "garnet-velvet",
+    "name": "Garnet Velvet",
+    "fontFamily": "'EB Garamond', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#7a1f2b",
+      "primaryLight": "#a8505a",
+      "primaryDark": "#4f1219",
+      "secondary": "#c9a96a",
+      "secondaryLight": "#e0c89c",
+      "secondaryDark": "#967739"
+    },
+    "tagline": "Deep Red, Quiet Luxury",
+    "desc": "Rich garnet softened with antique brass for refined, heritage brand identities."
+  },
+  {
+    "id": "spring-meadow",
+    "name": "Spring Meadow",
+    "fontFamily": "'Sora', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#5fae4f",
+      "primaryLight": "#92cd86",
+      "primaryDark": "#3d7e30",
+      "secondary": "#f2c14e",
+      "secondaryLight": "#f8d986",
+      "secondaryDark": "#c79620"
+    },
+    "tagline": "Fresh Growth, Bright Days",
+    "desc": "New-leaf green and buttercup yellow for cheerful, growth-focused brands."
+  },
+  {
+    "id": "smoke-and-ember",
+    "name": "Smoke & Ember",
+    "fontFamily": "'Space Grotesk', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#4a4a4a",
+      "primaryLight": "#7d7d7d",
+      "primaryDark": "#2a2a2a",
+      "secondary": "#e07a3c",
+      "secondaryLight": "#eda571",
+      "secondaryDark": "#aa551f"
+    },
+    "tagline": "Subtle Grey, Striking Spark",
+    "desc": "Cool slate smoke lit by a single ember accent for sharp, modern interfaces."
+  },
+  {
+    "id": "coral-reef",
+    "name": "Coral Reef",
+    "fontFamily": "'Poppins', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#ff7a6b",
+      "primaryLight": "#ffa89d",
+      "primaryDark": "#cc5347",
+      "secondary": "#23b5a0",
+      "secondaryLight": "#6fd0c1",
+      "secondaryDark": "#15806f"
+    },
+    "tagline": "Vivid Life Beneath The Waves",
+    "desc": "Bright living coral and tropical teal for vibrant, energetic digital products."
+  },
+  {
+    "id": "espresso-cream",
+    "name": "Espresso Cream",
+    "fontFamily": "'Lora', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#4a2f23",
+      "primaryLight": "#7a5a4a",
+      "primaryDark": "#2c1a12",
+      "secondary": "#dcc7a8",
+      "secondaryLight": "#efe1cb",
+      "secondaryDark": "#b39c79"
+    },
+    "tagline": "Rich Roast, Smooth Finish",
+    "desc": "Dark coffee brown swirled with warm cream for cozy, artisanal café brands."
+  },
+  {
+    "id": "neon-grape",
+    "name": "Neon Grape",
+    "fontFamily": "'Epilogue', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#7b2ff7",
+      "primaryLight": "#a672fa",
+      "primaryDark": "#561fb0",
+      "secondary": "#2fe6c4",
+      "secondaryLight": "#7ef0db",
+      "secondaryDark": "#1ba48c"
+    },
+    "tagline": "Electric By Design",
+    "desc": "Glowing purple and bright mint for bold, futuristic tech-forward brands."
+  },
+  {
+    "id": "autumn-fog",
+    "name": "Autumn Fog",
+    "fontFamily": "'Newsreader', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#8c7b6b",
+      "primaryLight": "#b3a597",
+      "primaryDark": "#5e5044",
+      "secondary": "#b5703f",
+      "secondaryLight": "#d29a71",
+      "secondaryDark": "#824d27"
+    },
+    "tagline": "Muted Mornings, Warm Hearts",
+    "desc": "Soft taupe mist with a warm chestnut accent for understated, earthy brands."
+  },
+  {
+    "id": "tropical-punch",
+    "name": "Tropical Punch",
+    "fontFamily": "'Outfit', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#ff4d6d",
+      "primaryLight": "#ff869b",
+      "primaryDark": "#cc2f4c",
+      "secondary": "#ffb627",
+      "secondaryLight": "#ffd072",
+      "secondaryDark": "#cc8c12"
+    },
+    "tagline": "Turn The Energy Up",
+    "desc": "Hot pink and mango yellow for loud, joyful, attention-grabbing brands."
+  },
+  {
+    "id": "stone-garden",
+    "name": "Stone Garden",
+    "fontFamily": "'Manrope', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#7d8470",
+      "primaryLight": "#a6ab9b",
+      "primaryDark": "#555b49",
+      "secondary": "#cbbfa6",
+      "secondaryLight": "#e3dac7",
+      "secondaryDark": "#9d9176"
+    },
+    "tagline": "Balance In Quiet Spaces",
+    "desc": "Mossy stone grey-green and pale gravel for minimal, meditative interfaces."
+  },
+  {
+    "id": "fuchsia-noir",
+    "name": "Fuchsia Noir",
+    "fontFamily": "'DM Serif Display', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap",
+    "colors": {
+      "primary": "#c2185b",
+      "primaryLight": "#dd5d8c",
+      "primaryDark": "#8a0f3f",
+      "secondary": "#1a1a2e",
+      "secondaryLight": "#45455f",
+      "secondaryDark": "#0c0c18"
+    },
+    "tagline": "Drama With An Edge",
+    "desc": "Bold fuchsia against near-black for sophisticated, fashion-forward statements."
+  },
+  {
+    "id": "honeydew-mint",
+    "name": "Honeydew Mint",
+    "fontFamily": "'Work Sans', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#9ed99a",
+      "primaryLight": "#c2e9bf",
+      "primaryDark": "#6fae6b",
+      "secondary": "#5bc0be",
+      "secondaryLight": "#93d6d5",
+      "secondaryDark": "#3a8d8b"
+    },
+    "tagline": "Cool, Crisp, Refreshing",
+    "desc": "Pale melon green and breezy mint for fresh, health-focused product brands."
+  },
+  {
+    "id": "saffron-spice",
+    "name": "Saffron Spice",
+    "fontFamily": "'Spectral', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#e9962e",
+      "primaryLight": "#f2bb73",
+      "primaryDark": "#b06d16",
+      "secondary": "#8a2b2b",
+      "secondaryLight": "#b25b5b",
+      "secondaryDark": "#5e1818"
+    },
+    "tagline": "Bold Flavor, Rich Tradition",
+    "desc": "Golden saffron and deep chili red for warm, spice-market inspired brands."
+  },
+  {
+    "id": "glacier-mint",
+    "name": "Glacier Mint",
+    "fontFamily": "'Sora', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#7fd4d0",
+      "primaryLight": "#aee6e3",
+      "primaryDark": "#4ea4a0",
+      "secondary": "#2d3a4a",
+      "secondaryLight": "#5a6878",
+      "secondaryDark": "#19222e"
+    },
+    "tagline": "Cool Precision, Clear Focus",
+    "desc": "Icy mint against deep slate for crisp, technical and trustworthy interfaces."
+  },
+  {
+    "id": "marmalade-sky",
+    "name": "Marmalade Sky",
+    "fontFamily": "'Crimson Pro', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#ef8354",
+      "primaryLight": "#f6ab85",
+      "primaryDark": "#bd5d33",
+      "secondary": "#4f5d75",
+      "secondaryLight": "#7d8aa0",
+      "secondaryDark": "#323c4c"
+    },
+    "tagline": "A Warm Glow At Day's End",
+    "desc": "Citrus orange over soft dusk blue for friendly, optimistic brand storytelling."
+  },
+  {
+    "id": "blush-and-bronze",
+    "name": "Blush & Bronze",
+    "fontFamily": "'Fraunces', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#e3a9a1",
+      "primaryLight": "#f0cac5",
+      "primaryDark": "#bb7d74",
+      "secondary": "#9c6b3f",
+      "secondaryLight": "#c0966d",
+      "secondaryDark": "#6e4a29"
+    },
+    "tagline": "Soft Warmth, Golden Hour",
+    "desc": "Delicate blush and warm bronze for elegant beauty and lifestyle brands."
+  },
+  {
+    "id": "electric-lime",
+    "name": "Electric Lime",
+    "fontFamily": "'Space Grotesk', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#b6e62a",
+      "primaryLight": "#d2f06f",
+      "primaryDark": "#85ab17",
+      "secondary": "#1b1f3b",
+      "secondaryLight": "#494d6b",
+      "secondaryDark": "#0d1022"
+    },
+    "tagline": "Charged And Unmistakable",
+    "desc": "High-voltage lime against midnight navy for bold, sporty tech brands."
+  },
+  {
+    "id": "antique-teal",
+    "name": "Antique Teal",
+    "fontFamily": "'EB Garamond', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#2f6b6b",
+      "primaryLight": "#609a9a",
+      "primaryDark": "#1b4444",
+      "secondary": "#d9b97a",
+      "secondaryLight": "#ead3a8",
+      "secondaryDark": "#a98a4b"
+    },
+    "tagline": "Old World, New Story",
+    "desc": "Faded museum teal with aged gold leaf for refined, heritage-minded brands."
+  },
+  {
+    "id": "cherry-cola",
+    "name": "Cherry Cola",
+    "fontFamily": "'Zilla Slab', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#a31621",
+      "primaryLight": "#c75259",
+      "primaryDark": "#6e0d15",
+      "secondary": "#3d2b1f",
+      "secondaryLight": "#6b564a",
+      "secondaryDark": "#241710"
+    },
+    "tagline": "Retro Fizz, Bold Taste",
+    "desc": "Deep cherry red over cola brown for nostalgic, diner-style brand identities."
+  },
+  {
+    "id": "seabreeze",
+    "name": "Seabreeze",
+    "fontFamily": "'Manrope', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#48b8d0",
+      "primaryLight": "#85d4e3",
+      "primaryDark": "#2d8499",
+      "secondary": "#f5f0e1",
+      "secondaryLight": "#ffffff",
+      "secondaryDark": "#d4cdb9"
+    },
+    "tagline": "Open Windows, Clear Skies",
+    "desc": "Fresh aqua and sun-bleached linen for breezy, coastal lifestyle brands."
+  },
+  {
+    "id": "royal-amethyst",
+    "name": "Royal Amethyst",
+    "fontFamily": "'Playfair Display', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap",
+    "colors": {
+      "primary": "#6a2c91",
+      "primaryLight": "#9760ba",
+      "primaryDark": "#481c63",
+      "secondary": "#e6c84f",
+      "secondaryLight": "#f0db88",
+      "secondaryDark": "#b69825"
+    },
+    "tagline": "Crowned In Color",
+    "desc": "Regal purple and gilded gold for luxurious, ceremonial brand experiences."
+  },
+  {
+    "id": "fresh-cucumber",
+    "name": "Fresh Cucumber",
+    "fontFamily": "'Work Sans', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#7cb342",
+      "primaryLight": "#a5cf7d",
+      "primaryDark": "#54802a",
+      "secondary": "#e8f0d6",
+      "secondaryLight": "#f6faec",
+      "secondaryDark": "#c4d0ac"
+    },
+    "tagline": "Crisp And Clean",
+    "desc": "Garden green over pale celery for fresh, natural and organic product brands."
+  },
+  {
+    "id": "burnt-sienna",
+    "name": "Burnt Sienna",
+    "fontFamily": "'Bitter', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#a8542c",
+      "primaryLight": "#cb845f",
+      "primaryDark": "#743819",
+      "secondary": "#2e4034",
+      "secondaryLight": "#5a6e60",
+      "secondaryDark": "#19241d"
+    },
+    "tagline": "Earth Pigments, Honest Tones",
+    "desc": "Burnt clay orange grounded by deep pine for rustic, handcrafted brands."
+  },
+  {
+    "id": "cotton-candy",
+    "name": "Cotton Candy",
+    "fontFamily": "'Outfit', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#f5a6d0",
+      "primaryLight": "#fac8e3",
+      "primaryDark": "#cc78a4",
+      "secondary": "#a6c8f5",
+      "secondaryLight": "#cadcfb",
+      "secondaryDark": "#7898cc"
+    },
+    "tagline": "Soft, Sweet, Dreamy",
+    "desc": "Pastel pink and baby blue for playful, whimsical and youthful brand moods."
+  },
+  {
+    "id": "obsidian-gold",
+    "name": "Obsidian Gold",
+    "fontFamily": "'Playfair Display', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap",
+    "colors": {
+      "primary": "#1b1b1b",
+      "primaryLight": "#4a4a4a",
+      "primaryDark": "#0a0a0a",
+      "secondary": "#c9a44c",
+      "secondaryLight": "#e0c585",
+      "secondaryDark": "#96762c"
+    },
+    "tagline": "Black Tie, Gold Standard",
+    "desc": "Volcanic black and refined gold for premium, exclusive luxury brands."
+  },
+  {
+    "id": "pistachio-cream",
+    "name": "Pistachio Cream",
+    "fontFamily": "'Manrope', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#b7cf8e",
+      "primaryLight": "#d3e3ba",
+      "primaryDark": "#88a160",
+      "secondary": "#f2e8d5",
+      "secondaryLight": "#fbf5ea",
+      "secondaryDark": "#d1c3a7"
+    },
+    "tagline": "Gentle, Wholesome, Warm",
+    "desc": "Soft pistachio green over vanilla cream for cozy, food and wellness brands."
+  },
+  {
+    "id": "stormy-petrol",
+    "name": "Stormy Petrol",
+    "fontFamily": "'Sora', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#1f4e5f",
+      "primaryLight": "#4f7e8e",
+      "primaryDark": "#0f2e39",
+      "secondary": "#e8703a",
+      "secondaryLight": "#f09e74",
+      "secondaryDark": "#b05222"
+    },
+    "tagline": "Calm Before, Power Within",
+    "desc": "Deep petrol blue cut by a warm orange flash for confident, modern brands."
+  },
+  {
+    "id": "rosewood-blush",
+    "name": "Rosewood Blush",
+    "fontFamily": "'Cormorant Garamond', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap",
+    "colors": {
+      "primary": "#7d3b46",
+      "primaryLight": "#a86c75",
+      "primaryDark": "#52242c",
+      "secondary": "#e8c4b8",
+      "secondaryLight": "#f4ded6",
+      "secondaryDark": "#c2978a"
+    },
+    "tagline": "Romance In Every Line",
+    "desc": "Deep rosewood and soft peach-blush for elegant, romantic editorial design."
+  },
+  {
+    "id": "lime-fizz",
+    "name": "Lime Fizz",
+    "fontFamily": "'Poppins', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#9ccc3c",
+      "primaryLight": "#bedd76",
+      "primaryDark": "#6e9622",
+      "secondary": "#16a085",
+      "secondaryLight": "#56c2ab",
+      "secondaryDark": "#0d6f5b"
+    },
+    "tagline": "Bubbly And Bright",
+    "desc": "Zesty lime and tropical teal for fresh, energetic and playful brand vibes."
+  },
+  {
+    "id": "midnight-plum",
+    "name": "Midnight Plum",
+    "fontFamily": "'DM Serif Display', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap",
+    "colors": {
+      "primary": "#3a1f3d",
+      "primaryLight": "#6a4a6d",
+      "primaryDark": "#221124",
+      "secondary": "#c98bb0",
+      "secondaryLight": "#e0b6cd",
+      "secondaryDark": "#9a5d82"
+    },
+    "tagline": "Mystery In Deep Color",
+    "desc": "Dark plum night with a soft orchid glow for moody, elegant brand identities."
+  },
+  {
+    "id": "harvest-gold",
+    "name": "Harvest Gold",
+    "fontFamily": "'Bitter', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#d4a017",
+      "primaryLight": "#e6c45f",
+      "primaryDark": "#9c7310",
+      "secondary": "#6b4226",
+      "secondaryLight": "#946850",
+      "secondaryDark": "#452815"
+    },
+    "tagline": "Reaping What You Sow",
+    "desc": "Wheat-field gold and rich soil brown for rustic, farm-to-table brand identities."
+  },
+  {
+    "id": "iceberg",
+    "name": "Iceberg",
+    "fontFamily": "'Epilogue', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#a3c4d9",
+      "primaryLight": "#c8dde9",
+      "primaryDark": "#6f97b0",
+      "secondary": "#e8eef0",
+      "secondaryLight": "#ffffff",
+      "secondaryDark": "#c4ccce"
+    },
+    "tagline": "Quiet, Cool, Composed",
+    "desc": "Pale glacier blue and frosted white for minimal, clean and airy interfaces."
+  },
+  {
+    "id": "chili-mango",
+    "name": "Chili Mango",
+    "fontFamily": "'Outfit', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#e23b2e",
+      "primaryLight": "#ed7a71",
+      "primaryDark": "#a8251b",
+      "secondary": "#f6a623",
+      "secondaryLight": "#facb70",
+      "secondaryDark": "#bd7c12"
+    },
+    "tagline": "Sweet Heat, Big Flavor",
+    "desc": "Fiery chili red and ripe mango gold for bold, appetizing food brands."
+  },
+  {
+    "id": "sage-and-clay",
+    "name": "Sage & Clay",
+    "fontFamily": "'Lora', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#9caf88",
+      "primaryLight": "#c0cdb1",
+      "primaryDark": "#6f8259",
+      "secondary": "#c08561",
+      "secondaryLight": "#d7ab90",
+      "secondaryDark": "#8e5d3c"
+    },
+    "tagline": "Earthen, Calm, Grounded",
+    "desc": "Soft sage green and warm terracotta clay for natural, artisanal brands."
+  },
+  {
+    "id": "ultraviolet",
+    "name": "Ultraviolet",
+    "fontFamily": "'Space Grotesk', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#5e35b1",
+      "primaryLight": "#8a64cf",
+      "primaryDark": "#3f217d",
+      "secondary": "#ff4081",
+      "secondaryLight": "#ff7fa8",
+      "secondaryDark": "#c5295c"
+    },
+    "tagline": "Beyond The Visible",
+    "desc": "Deep violet and hot pink for bold, energetic and creative tech brands."
+  },
+  {
+    "id": "toffee-cream",
+    "name": "Toffee Cream",
+    "fontFamily": "'Newsreader', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#a9763f",
+      "primaryLight": "#c89c6f",
+      "primaryDark": "#785127",
+      "secondary": "#f0e2cc",
+      "secondaryLight": "#faf1e2",
+      "secondaryDark": "#d0bd9f"
+    },
+    "tagline": "Smooth And Indulgent",
+    "desc": "Buttery toffee brown and soft cream for warm, comforting bakery brands."
+  },
+  {
+    "id": "deep-jungle",
+    "name": "Deep Jungle",
+    "fontFamily": "'Bitter', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#14452f",
+      "primaryLight": "#45735b",
+      "primaryDark": "#0a2a1b",
+      "secondary": "#d98e04",
+      "secondaryLight": "#ecb44f",
+      "secondaryDark": "#a16802"
+    },
+    "tagline": "Wild At The Roots",
+    "desc": "Dense jungle green with a bold amber call for adventurous, organic brands."
+  },
+  {
+    "id": "blueberry-milk",
+    "name": "Blueberry Milk",
+    "fontFamily": "'Manrope', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#7986cb",
+      "primaryLight": "#a5aede",
+      "primaryDark": "#515d9c",
+      "secondary": "#f3e9f5",
+      "secondaryLight": "#ffffff",
+      "secondaryDark": "#d2c6d5"
+    },
+    "tagline": "Soft, Dreamy, Modern",
+    "desc": "Muted periwinkle over creamy lilac for gentle, contemporary lifestyle brands."
+  },
+  {
+    "id": "rusty-rose",
+    "name": "Rusty Rose",
+    "fontFamily": "'Fraunces', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#b56576",
+      "primaryLight": "#d196a2",
+      "primaryDark": "#854350",
+      "secondary": "#6d6875",
+      "secondaryLight": "#979199",
+      "secondaryDark": "#48444f"
+    },
+    "tagline": "Faded Beauty, Lasting Charm",
+    "desc": "Dusty rose and muted mauve-grey for vintage, romantic editorial brands."
+  },
+  {
+    "id": "solar-flare",
+    "name": "Solar Flare",
+    "fontFamily": "'Zilla Slab', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#ff8c00",
+      "primaryLight": "#ffb14d",
+      "primaryDark": "#cc6f00",
+      "secondary": "#1a1a40",
+      "secondaryLight": "#46466b",
+      "secondaryDark": "#0d0d24"
+    },
+    "tagline": "Burn Bright, Aim High",
+    "desc": "Blazing orange against cosmic indigo for bold, ambitious tech brands."
+  },
+  {
+    "id": "mint-chocolate",
+    "name": "Mint Chocolate",
+    "fontFamily": "'Work Sans', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#6bbf9a",
+      "primaryLight": "#9ad6bd",
+      "primaryDark": "#458f6f",
+      "secondary": "#3e2a23",
+      "secondaryLight": "#6c544b",
+      "secondaryDark": "#241511"
+    },
+    "tagline": "A Cool, Rich Pairing",
+    "desc": "Fresh mint green and dark chocolate brown for indulgent dessert brands."
+  },
+  {
+    "id": "flamingo-pop",
+    "name": "Flamingo Pop",
+    "fontFamily": "'Outfit', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#fc5c8d",
+      "primaryLight": "#fd92b3",
+      "primaryDark": "#c93e69",
+      "secondary": "#22d3c5",
+      "secondaryLight": "#6fe3da",
+      "secondaryDark": "#159a90"
+    },
+    "tagline": "Loud, Proud, Tropical",
+    "desc": "Vivid flamingo pink and bright teal for fun, vibrant and bold brand looks."
+  },
+  {
+    "id": "walnut-sage",
+    "name": "Walnut Sage",
+    "fontFamily": "'Lora', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#5c4433",
+      "primaryLight": "#86705e",
+      "primaryDark": "#3a2a1e",
+      "secondary": "#a3b18a",
+      "secondaryLight": "#c5cfb2",
+      "secondaryDark": "#74815b"
+    },
+    "tagline": "Rooted, Warm, Natural",
+    "desc": "Rich walnut brown and soft sage for grounded, organic and crafted brands."
+  },
+  {
+    "id": "tangerine-dream",
+    "name": "Tangerine Dream",
+    "fontFamily": "'Poppins', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#ff6e40",
+      "primaryLight": "#ff9d78",
+      "primaryDark": "#cc4f25",
+      "secondary": "#ffd166",
+      "secondaryLight": "#ffe19c",
+      "secondaryDark": "#cca238"
+    },
+    "tagline": "Sunshine In Motion",
+    "desc": "Juicy tangerine and warm honey yellow for upbeat, energetic brand identities."
+  },
+  {
+    "id": "deep-claret",
+    "name": "Deep Claret",
+    "fontFamily": "'EB Garamond', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#5e1f2e",
+      "primaryLight": "#8d5060",
+      "primaryDark": "#3a101a",
+      "secondary": "#c0a062",
+      "secondaryLight": "#d8c293",
+      "secondaryDark": "#8e7338"
+    },
+    "tagline": "Vintage Cellar, Modern Pour",
+    "desc": "Deep claret red and old brass for refined wine, spirits and heritage brands."
+  },
+  {
+    "id": "frosted-sage",
+    "name": "Frosted Sage",
+    "fontFamily": "'Manrope', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#b2c2b0",
+      "primaryLight": "#d0dbce",
+      "primaryDark": "#849584",
+      "secondary": "#dfe7ec",
+      "secondaryLight": "#f4f7f9",
+      "secondaryDark": "#bcc4c9"
+    },
+    "tagline": "Whisper-Soft Neutrals",
+    "desc": "Pale frosted sage and cool grey for serene, minimalist and modern interfaces."
+  },
+  {
+    "id": "carnival-night",
+    "name": "Carnival Night",
+    "fontFamily": "'Space Grotesk', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#d62246",
+      "primaryLight": "#e56680",
+      "primaryDark": "#9c1531",
+      "secondary": "#4b1d6f",
+      "secondaryLight": "#7c509c",
+      "secondaryDark": "#2f1147"
+    },
+    "tagline": "Lights, Color, Spectacle",
+    "desc": "Bold carnival red and deep violet for festive, theatrical brand energy."
+  },
+  {
+    "id": "linen-and-navy",
+    "name": "Linen & Navy",
+    "fontFamily": "'Libre Franklin', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#27384f",
+      "primaryLight": "#566679",
+      "primaryDark": "#152234",
+      "secondary": "#ece4d6",
+      "secondaryLight": "#f8f3ea",
+      "secondaryDark": "#cabfa9"
+    },
+    "tagline": "Classic, Crisp, Tailored",
+    "desc": "Deep navy and natural linen for clean, nautical and timeless brand looks."
+  },
+  {
+    "id": "guava-jam",
+    "name": "Guava Jam",
+    "fontFamily": "'Outfit', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#e84a6f",
+      "primaryLight": "#f0849c",
+      "primaryDark": "#b22c4c",
+      "secondary": "#f9c74f",
+      "secondaryLight": "#fbdc8c",
+      "secondaryDark": "#c89a25"
+    },
+    "tagline": "Tropical And Sweet",
+    "desc": "Bright guava pink and golden mango for fresh, fruity and lively brands."
+  },
+  {
+    "id": "graphite-citrus",
+    "name": "Graphite Citrus",
+    "fontFamily": "'Sora', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#33373d",
+      "primaryLight": "#62666c",
+      "primaryDark": "#1d2024",
+      "secondary": "#c6e84a",
+      "secondaryLight": "#dcf188",
+      "secondaryDark": "#94b020"
+    },
+    "tagline": "Sharp Tools, Bright Ideas",
+    "desc": "Cool graphite grey and electric citrus for modern, technical product brands."
+  },
+  {
+    "id": "peony-garden",
+    "name": "Peony Garden",
+    "fontFamily": "'Cormorant Garamond', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap",
+    "colors": {
+      "primary": "#e07a9c",
+      "primaryLight": "#eda7bd",
+      "primaryDark": "#b3506f",
+      "secondary": "#7a9e6e",
+      "secondaryLight": "#a6c29c",
+      "secondaryDark": "#557049"
+    },
+    "tagline": "In Full, Gentle Bloom",
+    "desc": "Soft peony pink and garden green for elegant, floral and feminine brands."
+  },
+  {
+    "id": "cocoa-mint",
+    "name": "Cocoa Mint",
+    "fontFamily": "'Work Sans', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#4e342e",
+      "primaryLight": "#7c5b53",
+      "primaryDark": "#2e1d19",
+      "secondary": "#80cbc4",
+      "secondaryLight": "#aadfd9",
+      "secondaryDark": "#519a93"
+    },
+    "tagline": "Warm Base, Cool Accent",
+    "desc": "Deep cocoa brown and fresh mint for balanced, modern café and food brands."
+  },
+  {
+    "id": "polar-night",
+    "name": "Polar Night",
+    "fontFamily": "'Epilogue', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#2e3440",
+      "primaryLight": "#5a6373",
+      "primaryDark": "#1a1e26",
+      "secondary": "#88c0d0",
+      "secondaryLight": "#b3d8e2",
+      "secondaryDark": "#5e96a6"
+    },
+    "tagline": "Calm In The Long Dark",
+    "desc": "Deep arctic slate and frost blue for clean, focused developer-friendly themes."
   }
 ]

@@ -4,6 +4,7 @@ import { LayoutGrid, Disc } from 'lucide-react';
 import classNames from 'classnames';
 import JukeboxCarousel from '../../components/JukeboxCarousel';
 import ThemeCard from '../../components/ThemeCard';
+import CodeExportPanel from '../../components/CodeExportPanel';
 import themesData from '../../constants/themes.json';
 import type { ThemeConfig, ViewMode } from './ThemeCatalog.types';
 import styles from './ThemeCatalog.module.scss';
@@ -172,6 +173,9 @@ const ThemeCatalog = (_props: ThemeCatalogProps) => {
             </div>
           </div>
         )}
+
+        {/* Copy-to-your-project code export panel (VSCode-like tabbed view) */}
+        <CodeExportPanel theme={appliedTheme} />
       </main>
 
       {/* Mini App Preview Banner at Bottom showing dynamic styling */}

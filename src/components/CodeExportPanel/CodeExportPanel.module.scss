@@ -1,0 +1,222 @@
+@use '../../styles/variables' as *;
+
+.panel {
+  width: 100%;
+  max-width: 880px;
+  margin: 40px auto 8px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.panelHeader {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.panelTitleGroup {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--theme-primary);
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+.panelTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: $text-primary;
+}
+
+.panelSubtitle {
+  font-size: 13px;
+  color: $text-secondary;
+  margin-top: 6px;
+  line-height: 1.5;
+}
+
+/* Editor shell — mimics a code editor window */
+.editor {
+  border: 1px solid $border-color;
+  border-radius: $radius-md;
+  overflow: hidden;
+  background-color: #11131a;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+
+  // A colored glow drawn from the active theme so it never feels flat/black.
+  background-image:
+    radial-gradient(circle at 0% 0%, color-mix(in srgb, var(--theme-primary) 18%, transparent) 0%, transparent 40%),
+    radial-gradient(circle at 100% 100%, color-mix(in srgb, var(--theme-secondary) 18%, transparent) 0%, transparent 45%);
+}
+
+/* Tab bar — VSCode style file tabs */
+.tabBar {
+  display: flex;
+  align-items: stretch;
+  gap: 2px;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-bottom: 1px solid $border-color;
+  padding: 0 8px;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    height: 0;
+  }
+}
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: transparent;
+  border: none;
+  border-top: 2px solid transparent;
+  color: $text-muted;
+  font-size: 12px;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: $transition-fast;
+
+  &:hover {
+    color: $text-secondary;
+    background-color: rgba(255, 255, 255, 0.02);
+  }
+
+  &.activeTab {
+    color: $text-primary;
+    background-color: #11131a;
+    border-top-color: var(--theme-primary);
+  }
+}
+
+.tabDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.tabName {
+  letter-spacing: 0.2px;
+}
+
+.copyButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  align-self: center;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: $text-primary;
+  border-radius: $radius-sm;
+  cursor: pointer;
+  transition: $transition-fast;
+  border: 1px solid transparent;
+  background:
+    linear-gradient(#11131a, #11131a) padding-box,
+    linear-gradient(to right, var(--theme-primary), var(--theme-secondary)) border-box;
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  }
+
+  &.copied {
+    color: #34d399;
+    border-color: #34d399;
+    background: rgba(52, 211, 153, 0.08);
+  }
+}
+
+/* Path breadcrumb strip */
+.pathBar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  font-size: 11px;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  color: $text-muted;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.pathSep {
+  opacity: 0.5;
+}
+
+.pathCurrent {
+  color: $text-secondary;
+}
+
+.langBadge {
+  margin-left: auto;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  color: var(--theme-primary);
+  background-color: color-mix(in srgb, var(--theme-primary) 14%, transparent);
+}
+
+/* Code body */
+.codeBody {
+  display: flex;
+  max-height: 320px;
+  overflow: auto;
+  font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
+  font-size: 12.5px;
+  line-height: 1.7;
+}
+
+.gutter {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0;
+  margin: 0;
+  text-align: right;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.04);
+  color: $text-muted;
+  flex-shrink: 0;
+}
+
+.lineNo {
+  padding: 0 14px;
+  opacity: 0.5;
+}
+
+.code {
+  margin: 0;
+  padding: 16px 20px;
+  color: #d7dae0;
+  white-space: pre;
+  flex: 1;
+  overflow-x: auto;
+
+  code {
+    font-family: inherit;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

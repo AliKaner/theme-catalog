@@ -16,5 +16,11 @@
     "font": "Tipografi",
     "activeTheme": "Aktif Tema",
     "previewTitle": "Mini Web Sitesi Önizlemesi"
+  },
+  "export": {
+    "title": "Projene Kopyala",
+    "subtitle": "Aktif temayı dilediğin formatta al — sekmelerden dosyayı seç, kopyala ve kendi projene yapıştır.",
+    "copy": "Kopyala",
+    "copied": "Kopyalandı!"
   }
 }
