@@ -1,0 +1,245 @@
+@use '../../styles/variables' as *;
+
+.cardWrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: $bg-card;
+  border: 1px solid $border-color;
+  border-radius: $radius-lg;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  transition: $transition-normal;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    border-color: var(--theme-primary);
+    transform: translateY(-6px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.45);
+    background-color: $bg-card-hover;
+
+    .browserHeader {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .mockTitle {
+      color: var(--theme-primary-light);
+    }
+  }
+
+  &.active {
+    border-color: var(--theme-primary);
+    box-shadow: 0 0 0 2px var(--theme-primary), 0 20px 50px rgba(0, 0, 0, 0.5);
+    background-color: $bg-card-hover;
+
+    .browserHeader {
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+  }
+}
+
+/* Browser mock header */
+.browserHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: $radius-md $radius-md 0 0;
+  margin: -18px -18px 12px -18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: $transition-fast;
+}
+
+.windowControls {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+
+  &.red { background-color: #ff5f56; }
+  &.yellow { background-color: #ffbd2e; }
+  &.green { background-color: #27c93f; }
+}
+
+.browserUrl {
+  font-size: 10px;
+  color: $text-muted;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 2px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* Mock Website Area */
+.previewContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+.mockHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.mockLogo {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--theme-primary);
+  letter-spacing: -0.5px;
+  transition: $transition-fast;
+}
+
+.mockNav {
+  display: flex;
+  gap: 8px;
+}
+
+.mockNavLink {
+  width: 24px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.mockHero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.mockTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: $text-primary;
+  line-height: 1.25;
+  margin-bottom: 8px;
+  font-family: var(--theme-font-family);
+  transition: $transition-normal;
+}
+
+.mockDesc {
+  font-size: 11px;
+  color: $text-secondary;
+  line-height: 1.4;
+  margin-bottom: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.mockButtons {
+  display: flex;
+  gap: 8px;
+}
+
+/* Sleek Premium Button with Border Gradient */
+.gradientButton {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 6px 14px;
+  color: $text-primary;
+  cursor: pointer;
+  border-radius: $radius-sm;
+  transition: $transition-fast;
+  outline: none;
+  
+  // Custom transparent border gradient trick
+  border: 1px solid transparent;
+  background: 
+    linear-gradient($bg-card, $bg-card) padding-box, 
+    linear-gradient(to right, var(--theme-primary), var(--theme-secondary)) border-box;
+
+  &:hover {
+    transform: translateY(-1px);
+    background: 
+      linear-gradient($bg-card-hover, $bg-card-hover) padding-box, 
+      linear-gradient(to right, var(--theme-primary-light), var(--theme-secondary-light)) border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.outlineButton {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 6px 12px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: $text-muted;
+  border-radius: $radius-sm;
+  cursor: pointer;
+  transition: $transition-fast;
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    color: $text-secondary;
+  }
+}
+
+/* Card footer details */
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.themeNameSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.themeNameLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: $text-primary;
+}
+
+.fontFamilyName {
+  font-size: 9px;
+  color: $text-muted;
+  margin-top: 1px;
+}
+
+.colorPalette {
+  display: flex;
+  gap: 4px;
+}
+
+.colorDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: $transition-fast;
+
+  &:hover {
+    transform: scale(1.3);
+    z-index: 10;
+  }
+}

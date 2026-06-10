@@ -1,0 +1,450 @@
+@use '../../styles/variables' as *;
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $bg-dark;
+  color: $text-primary;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 90px; // account for floating banner
+
+  // Dynamic subtle background glow based on selected theme
+  &::before {
+    content: '';
+    position: absolute;
+    top: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(var(--app-primary), 0.08) 0%, transparent 70%);
+    // Safe fall-back: extract variables since hex value string variables don't work directly inside rgba,
+    // we can use css custom property directly with filter or opacity:
+    background: radial-gradient(circle, var(--app-primary) 0%, transparent 65%);
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: $z-below;
+    transition: $transition-slow;
+  }
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background-color: rgba(15, 16, 21, 0.8);
+  border-bottom: 1px solid $border-color;
+  position: sticky;
+  top: 0;
+  z-index: $z-header;
+  backdrop-filter: blur(12px);
+
+  @include mobile {
+    padding: 12px 20px;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.logoGroup {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  @include mobile {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.brandLogo {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--app-primary);
+  letter-spacing: -0.8px;
+  transition: $transition-slow;
+}
+
+.logoLabel {
+  font-size: 11px;
+  color: $text-muted;
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.controlsGroup {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  @include mobile {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* Segmented Control Switcher */
+.segmentControl {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  padding: 3px;
+  border-radius: $radius-md;
+}
+
+.segmentBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: transparent;
+  border: none;
+  color: $text-muted;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: $radius-sm;
+  cursor: pointer;
+  transition: $transition-normal;
+
+  svg {
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    color: $text-primary;
+  }
+
+  &.activeSegment {
+    background-color: $bg-card;
+    color: var(--app-primary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+    svg {
+      transform: rotate(45deg);
+      color: var(--app-primary);
+    }
+  }
+
+  @include mobile {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+}
+
+/* Language Toggle */
+.languageToggleBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: $text-secondary;
+  padding: 8px 12px;
+  border-radius: $radius-md;
+  cursor: pointer;
+  transition: $transition-fast;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: $text-primary;
+  }
+
+  .langCode {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* Main Content Area */
+.mainContent {
+  flex: 1;
+  max-width: $container-max-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    padding: 24px 20px;
+  }
+}
+
+.heroHeader {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.pageTitle {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+  background: linear-gradient(135deg, #ffffff 40%, var(--app-primary-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: $transition-slow;
+
+  @include mobile {
+    font-size: 26px;
+  }
+}
+
+.pageSubtitle {
+  font-size: 14px;
+  color: $text-secondary;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+
+  @include mobile {
+    font-size: 12px;
+  }
+}
+
+/* Jukebox Layout */
+.jukeboxWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Theme Detail Box underneath carousel */
+.themeDetailsShowcase {
+  width: 100%;
+  max-width: 680px;
+  background-color: $bg-card;
+  border: 1px solid $border-color;
+  border-radius: $radius-lg;
+  padding: 24px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-top: 10px;
+
+  @include mobile {
+    padding: 16px;
+  }
+}
+
+.detailsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 20px;
+
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .fontFamilyValue {
+    font-size: 12px;
+    color: $text-muted;
+    font-family: monospace;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    gap: 4px;
+    h2 { font-size: 18px; }
+  }
+}
+
+.colorPaletteGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.colorGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.colorGroupLabel {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $text-muted;
+}
+
+.colorList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.colorItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.swatch {
+  width: 28px;
+  height: 28px;
+  border-radius: $radius-sm;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.colorCodeLabel {
+  font-size: 12px;
+  color: $text-secondary;
+  font-family: monospace;
+}
+
+/* Grid Layout */
+.gridWrapper {
+  width: 100%;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.themeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 16px;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+.gridItem {
+  display: flex;
+  justify-content: center;
+}
+
+/* Applied Theme bottom floating banner */
+.appBanner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 80px);
+  max-width: $container-max-width;
+  background-color: rgba(24, 25, 32, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: $radius-lg;
+  padding: 16px 32px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  z-index: $z-overlay;
+  transition: $transition-slow;
+
+  @include mobile {
+    width: calc(100% - 32px);
+    padding: 16px 20px;
+    bottom: 16px;
+  }
+}
+
+.bannerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.bannerText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    transition: $transition-slow;
+  }
+
+  p {
+    font-size: 12px;
+    color: $text-secondary;
+    line-height: 1.4;
+  }
+}
+
+.bannerActionButton {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 10px 22px;
+  color: #ffffff;
+  border-radius: $radius-sm;
+  cursor: pointer;
+  transition: $transition-normal;
+  outline: none;
+  flex-shrink: 0;
+
+  // Transparent border gradient button representation for base theme
+  border: 1px solid transparent;
+  background: 
+    linear-gradient($bg-card, $bg-card) padding-box, 
+    linear-gradient(to right, var(--app-primary), var(--app-secondary)) border-box;
+
+  &:hover {
+    transform: translateY(-1px);
+    background: 
+      linear-gradient($bg-card-hover, $bg-card-hover) padding-box, 
+      linear-gradient(to right, var(--app-primary-light), var(--app-secondary-light)) border-box;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  @include mobile {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

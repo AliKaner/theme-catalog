@@ -1,0 +1,20 @@
+{
+  "catalog": {
+    "title": "Premium Theme Catalog",
+    "subtitle": "Explore beautiful web palettes, custom typography, and dynamic animations in real-time.",
+    "viewToggle": "Layout View",
+    "jukebox": "3D Jukebox",
+    "grid": "Grid List",
+    "previewButton": "Launch Site",
+    "selectTheme": "Apply Theme",
+    "selected": "Applied",
+    "colors": "Theme Colors",
+    "primary": "Primary",
+    "secondary": "Secondary",
+    "light": "Light",
+    "dark": "Dark",
+    "font": "Typography",
+    "activeTheme": "Active Theme",
+    "previewTitle": "Mini Website Preview"
+  }
+}

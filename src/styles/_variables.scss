@@ -1,0 +1,53 @@
+// Z-Index Variables
+$z-below: -1;
+$z-base: 0;
+$z-above: 1;
+$z-header: 1000;
+$z-sidebar: 1010;
+$z-overlay: 1100;
+$z-dropdown: 1200;
+$z-modal: 2000;
+$z-tooltip: 3000;
+
+// Color System (Catalog Core Theme - Dark & Sleek)
+$bg-dark: #0f1015;
+$bg-card: #181920;
+$bg-card-hover: #21232d;
+$border-color: #2a2c38;
+$text-primary: #f3f4f6;
+$text-secondary: #9ca3af;
+$text-muted: #6b7280;
+
+// Theme Transition Defaults
+$transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-normal: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+// Layout constants
+$radius-sm: 6px;
+$radius-md: 12px;
+$radius-lg: 20px;
+$container-max-width: 1280px;
+
+// Media Queries
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 960px;
+$breakpoint-desktop: 1280px;
+
+@mixin mobile {
+  @media (max-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "catalog": {
+    "title": "Premium Tema Kataloğu",
+    "subtitle": "Harika web paletlerini, özel yazı tiplerini ve dinamik animasyonları gerçek zamanlı keşfedin.",
+    "viewToggle": "Görünüm Düzeni",
+    "jukebox": "3D Jukebox",
+    "grid": "Izgara Listesi",
+    "previewButton": "Siteyi Başlat",
+    "selectTheme": "Temayı Uygula",
+    "selected": "Uygulandı",
+    "colors": "Tema Renkleri",
+    "primary": "Ana Renk",
+    "secondary": "Yardımcı Renk",
+    "light": "Açık",
+    "dark": "Koyu",
+    "font": "Tipografi",
+    "activeTheme": "Aktif Tema",
+    "previewTitle": "Mini Web Sitesi Önizlemesi"
+  }
+}

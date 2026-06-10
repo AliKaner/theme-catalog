@@ -1,0 +1,98 @@
+[
+  {
+    "id": "ocean-breeze",
+    "name": "Ocean Breeze",
+    "fontFamily": "'Plus Jakarta Sans', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#0077b6",
+      "primaryLight": "#90e0ef",
+      "primaryDark": "#03045e",
+      "secondary": "#00b4d8",
+      "secondaryLight": "#caf0f8",
+      "secondaryDark": "#0096c7"
+    },
+    "tagline": "Refresh Your Digital Presence",
+    "desc": "A clean, modern interface designed to evoke the calm and clarity of coastal winds."
+  },
+  {
+    "id": "sunset-glow",
+    "name": "Sunset Glow",
+    "fontFamily": "'Outfit', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#ff5733",
+      "primaryLight": "#ff8d75",
+      "primaryDark": "#c70039",
+      "secondary": "#ffc300",
+      "secondaryLight": "#ffe07d",
+      "secondaryDark": "#ff9a00"
+    },
+    "tagline": "Warmth In Every Interaction",
+    "desc": "Vibrant hues and smooth transitions styled for energetic and engaging user experiences."
+  },
+  {
+    "id": "emerald-forest",
+    "name": "Emerald Forest",
+    "fontFamily": "'Syne', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&display=swap",
+    "colors": {
+      "primary": "#2a9d8f",
+      "primaryLight": "#83c5be",
+      "primaryDark": "#1a5e55",
+      "secondary": "#e76f51",
+      "secondaryLight": "#f4a261",
+      "secondaryDark": "#b84b30"
+    },
+    "tagline": "Organic Aesthetics, Bold Design",
+    "desc": "An earthy blend of deep greens and rich terracottas for a sophisticated, natural look."
+  },
+  {
+    "id": "cyberpunk-neon",
+    "name": "Cyberpunk Neon",
+    "fontFamily": "'Orbitron', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&display=swap",
+    "colors": {
+      "primary": "#ff007f",
+      "primaryLight": "#ff66b2",
+      "primaryDark": "#99004c",
+      "secondary": "#00ffff",
+      "secondaryLight": "#80ffff",
+      "secondaryDark": "#009999"
+    },
+    "tagline": "Step Into The Digital Future",
+    "desc": "High-contrast neon tones coupled with sharp typography for futuristic websites."
+  },
+  {
+    "id": "serene-lavender",
+    "name": "Serene Lavender",
+    "fontFamily": "'Playfair Display', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap",
+    "colors": {
+      "primary": "#7209b7",
+      "primaryLight": "#b5179e",
+      "primaryDark": "#3f0763",
+      "secondary": "#4cc9f0",
+      "secondaryLight": "#72efdd",
+      "secondaryDark": "#3a0ca3"
+    },
+    "tagline": "Elegant & Graceful Portfolios",
+    "desc": "Classic serif typography paired with deep purples for elegant creative showcasing."
+  },
+  {
+    "id": "nordic-slate",
+    "name": "Nordic Slate",
+    "fontFamily": "'Inter', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#4a4e69",
+      "primaryLight": "#9a8c98",
+      "primaryDark": "#22223b",
+      "secondary": "#f2e9e1",
+      "secondaryLight": "#ffffff",
+      "secondaryDark": "#c9ada7"
+    },
+    "tagline": "Minimalism Defined By Utility",
+    "desc": "Clean gray-slate tones and clean typography, ideal for modern SaaS applications."
+  }
+]
