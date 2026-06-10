@@ -110,5 +110,229 @@
     },
     "tagline": "Timeless Warmth Of The Desert",
     "desc": "Sun-baked golds and sandy ochres for luxurious, editorial brand experiences."
+  },
+  {
+    "id": "wada-coral-jade",
+    "name": "Coral & Jade",
+    "fontFamily": "'Cormorant Garamond', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap",
+    "colors": {
+      "primary": "#e8615b",
+      "primaryLight": "#f3a09a",
+      "primaryDark": "#a83c37",
+      "secondary": "#1f7a6d",
+      "secondaryLight": "#6cb3a8",
+      "secondaryDark": "#0f4d44"
+    },
+    "tagline": "A Vintage Harmony Of Tones",
+    "desc": "A Sanzo Wada inspired pairing of warm coral and cool jade for refined editorial design."
+  },
+  {
+    "id": "wada-mustard-prussian",
+    "name": "Mustard & Prussian",
+    "fontFamily": "'Libre Franklin', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#d9a521",
+      "primaryLight": "#ecca6e",
+      "primaryDark": "#9c7310",
+      "secondary": "#1c3f5e",
+      "secondaryLight": "#4f7194",
+      "secondaryDark": "#0d2436"
+    },
+    "tagline": "Bold Contrast, Quiet Confidence",
+    "desc": "Rich mustard gold against deep Prussian blue, a classic Wada combination for striking layouts."
+  },
+  {
+    "id": "wada-dusty-rose-sage",
+    "name": "Dusty Rose & Sage",
+    "fontFamily": "'Fraunces', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#c08497",
+      "primaryLight": "#dcb3c1",
+      "primaryDark": "#8d5a6b",
+      "secondary": "#8a9a5b",
+      "secondaryLight": "#b6c293",
+      "secondaryDark": "#5f6d39"
+    },
+    "tagline": "Soft Tones For Gentle Brands",
+    "desc": "Muted rose and earthy sage create a calm, vintage palette ideal for wellness and lifestyle."
+  },
+  {
+    "id": "wada-burgundy-cream",
+    "name": "Burgundy & Cream",
+    "fontFamily": "'EB Garamond', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#7b2d3b",
+      "primaryLight": "#a85a67",
+      "primaryDark": "#511822",
+      "secondary": "#f0e6d2",
+      "secondaryLight": "#fbf6ec",
+      "secondaryDark": "#d4c4a3"
+    },
+    "tagline": "Heritage, Distilled",
+    "desc": "Deep wine red softened by warm cream for timeless, sophisticated brand storytelling."
+  },
+  {
+    "id": "wada-terracotta-olive",
+    "name": "Terracotta & Olive",
+    "fontFamily": "'Spectral', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#c45c34",
+      "primaryLight": "#e0916f",
+      "primaryDark": "#8f3c1d",
+      "secondary": "#6b6b3a",
+      "secondaryLight": "#9a9a63",
+      "secondaryDark": "#454522"
+    },
+    "tagline": "Grounded In Natural Beauty",
+    "desc": "Baked terracotta meets muted olive for an organic, Mediterranean-inspired aesthetic."
+  },
+  {
+    "id": "wada-plum-celadon",
+    "name": "Plum & Celadon",
+    "fontFamily": "'DM Serif Display', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap",
+    "colors": {
+      "primary": "#5d3754",
+      "primaryLight": "#8a6480",
+      "primaryDark": "#3a2035",
+      "secondary": "#a3c1ad",
+      "secondaryLight": "#cce0d2",
+      "secondaryDark": "#6f927a"
+    },
+    "tagline": "Quiet Elegance, Refined Taste",
+    "desc": "Soft plum and pale celadon green pair for a delicate, gallery-like visual rhythm."
+  },
+  {
+    "id": "wada-vermillion-indigo",
+    "name": "Vermillion & Indigo",
+    "fontFamily": "'Zilla Slab', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#d8412f",
+      "primaryLight": "#e8806f",
+      "primaryDark": "#9e2718",
+      "secondary": "#34406b",
+      "secondaryLight": "#6571a0",
+      "secondaryDark": "#1d2745"
+    },
+    "tagline": "Energy Meets Depth",
+    "desc": "Fiery vermillion balanced by deep indigo, a dramatic Wada pairing for confident brands."
+  },
+  {
+    "id": "wada-peach-teal",
+    "name": "Peach & Teal",
+    "fontFamily": "'Poppins', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#f2a07b",
+      "primaryLight": "#f8c4ac",
+      "primaryDark": "#cf7651",
+      "secondary": "#157a82",
+      "secondaryLight": "#5aa9af",
+      "secondaryDark": "#0c4f54"
+    },
+    "tagline": "Fresh, Friendly, Approachable",
+    "desc": "Soft peach warmed against crisp teal for cheerful, modern product interfaces."
+  },
+  {
+    "id": "wada-ochre-aubergine",
+    "name": "Ochre & Aubergine",
+    "fontFamily": "'Lora', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#cf9b3e",
+      "primaryLight": "#e3c074",
+      "primaryDark": "#9a6e1f",
+      "secondary": "#4a2c40",
+      "secondaryLight": "#7a566f",
+      "secondaryDark": "#2c1726"
+    },
+    "tagline": "Rich, Moody, Memorable",
+    "desc": "Golden ochre against deep aubergine for a luxurious, late-autumn editorial mood."
+  },
+  {
+    "id": "wada-sky-coral",
+    "name": "Sky & Coral",
+    "fontFamily": "'Work Sans', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#5fa8d3",
+      "primaryLight": "#9bcae8",
+      "primaryDark": "#3a7ba5",
+      "secondary": "#f76c5e",
+      "secondaryLight": "#fa9b91",
+      "secondaryDark": "#c44438"
+    },
+    "tagline": "Light, Open, And Inviting",
+    "desc": "Soft sky blue and warm coral create an airy, optimistic palette for friendly products."
+  },
+  {
+    "id": "wada-forest-marigold",
+    "name": "Forest & Marigold",
+    "fontFamily": "'Bitter', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#264d3b",
+      "primaryLight": "#578063",
+      "primaryDark": "#142b20",
+      "secondary": "#e8a33d",
+      "secondaryLight": "#f2c87e",
+      "secondaryDark": "#b87a1c"
+    },
+    "tagline": "Nature With A Spark",
+    "desc": "Deep forest green lit by warm marigold for organic brands with a confident edge."
+  },
+  {
+    "id": "wada-slate-blush",
+    "name": "Slate & Blush",
+    "fontFamily": "'Manrope', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#46566b",
+      "primaryLight": "#7a8799",
+      "primaryDark": "#2a3543",
+      "secondary": "#e7b6ad",
+      "secondaryLight": "#f3d6d0",
+      "secondaryDark": "#c08a80"
+    },
+    "tagline": "Calm Structure, Warm Detail",
+    "desc": "Cool slate grounded with a soft blush accent for considered, contemporary interfaces."
+  },
+  {
+    "id": "wada-rust-cerulean",
+    "name": "Rust & Cerulean",
+    "fontFamily": "'Roboto Slab', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#b5532a",
+      "primaryLight": "#d68a64",
+      "primaryDark": "#7e3717",
+      "secondary": "#2978a0",
+      "secondaryLight": "#67a6c6",
+      "secondaryDark": "#184f6e"
+    },
+    "tagline": "Weathered Warmth, Cool Clarity",
+    "desc": "Iron rust against a clear cerulean sky for grounded, industrial-modern brands."
+  },
+  {
+    "id": "wada-emerald-gold",
+    "name": "Emerald & Gold",
+    "fontFamily": "'Playfair Display', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap",
+    "colors": {
+      "primary": "#0b6e4f",
+      "primaryLight": "#4f9d83",
+      "primaryDark": "#054430",
+      "secondary": "#c9a227",
+      "secondaryLight": "#e2c466",
+      "secondaryDark": "#917214"
+    },
+    "tagline": "Opulence In Every Detail",
+    "desc": "Jewel-toned emerald paired with antique gold for premium, heritage-luxury experiences."
   }
 ]
