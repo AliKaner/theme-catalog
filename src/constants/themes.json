@@ -94,5 +94,21 @@
     },
     "tagline": "Minimalism Defined By Utility",
     "desc": "Clean gray-slate tones and clean typography, ideal for modern SaaS applications."
+  },
+  {
+    "id": "golden-sahara",
+    "name": "Golden Sahara",
+    "fontFamily": "'Marcellus', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Marcellus&display=swap",
+    "colors": {
+      "primary": "#c9952d",
+      "primaryLight": "#e8c87a",
+      "primaryDark": "#8a5a17",
+      "secondary": "#d98c54",
+      "secondaryLight": "#f3c9a3",
+      "secondaryDark": "#a85f30"
+    },
+    "tagline": "Timeless Warmth Of The Desert",
+    "desc": "Sun-baked golds and sandy ochres for luxurious, editorial brand experiences."
   }
 ]
