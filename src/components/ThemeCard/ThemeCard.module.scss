@@ -100,8 +100,8 @@
   transition: $transition-normal;
 }
 
-/* Flat / brutalist / anti-design surface — no gradients, hard edges, paper bg */
-.previewContainer.flat {
+/* 2. Flat / brutalist / anti-design surface — no gradients, hard edges, paper bg */
+.previewContainer.v_flat {
   background: var(--theme-secondary-light);
   border: 2px solid #14151b;
   border-radius: 0;

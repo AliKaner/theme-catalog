@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames';
 import type { ThemeCardProps } from './ThemeCard.types';
+import type { ThemeVariant } from '../../pages/ThemeCatalog/ThemeCatalog.types';
 import styles from './ThemeCard.module.scss';
 
 const ThemeCard = (props: ThemeCardProps) => {
@@ -15,6 +16,10 @@ const ThemeCard = (props: ThemeCardProps) => {
   const name: string = theme.name;
   const tagline: string = theme.tagline;
   const desc: string = theme.desc;
+
+  // Resolve the preview surface style. `flat: true` maps to the 'flat' variant
+  // for backwards compatibility; otherwise fall back to the soft 'gradient'.
+  const variant: ThemeVariant = theme.variant ?? (theme.flat ? 'flat' : 'gradient');
 
   // Inline styling object to map color variables to this specific card's context
   // Type explicitly cast to React.CSSProperties
@@ -63,7 +68,7 @@ const ThemeCard = (props: ThemeCardProps) => {
       </div>
 
       {/* Mock Website Preview Area */}
-      <div className={classNames(styles.previewContainer, { [styles.flat]: theme.flat })}>
+      <div className={classNames(styles.previewContainer, styles[`v_${variant}`])}>
         {/* Mock Navigation Bar */}
         <header className={styles.mockHeader}>
           <div className={styles.mockLogo} style={{ fontFamily: theme.fontFamily }}>

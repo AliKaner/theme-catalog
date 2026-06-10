@@ -16,8 +16,23 @@ export type ThemeConfig = {
   tagline: string;
   desc: string;
   // When true the preview is rendered with a flat, gradientless, brutalist
-  // surface instead of the default soft theme-colored gradient.
+  // surface. Kept for backwards compatibility — equivalent to variant 'flat'.
   flat?: boolean;
+  // The visual style of the preview surface. Defaults to 'gradient'.
+  variant?: ThemeVariant;
 };
+
+// The ten preview surface styles a theme can use.
+export type ThemeVariant =
+  | 'gradient'
+  | 'flat'
+  | 'glass'
+  | 'neu'
+  | 'outline'
+  | 'mesh'
+  | 'grid'
+  | 'duotone'
+  | 'scanline'
+  | 'spotlight';
 
 export type ViewMode = 'jukebox' | 'grid';

@@ -2290,5 +2290,469 @@
     "tagline": "RUN THE FUTURE",
     "desc": "Toxic lime on near-black for sharp, technical cyber and developer-tool brands.",
     "flat": true
+  },
+  {
+    "id": "mango-tango",
+    "name": "Mango Tango",
+    "fontFamily": "'Poppins', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#ff9f1c",
+      "primaryLight": "#ffc05e",
+      "primaryDark": "#cc7c12",
+      "secondary": "#e71d36",
+      "secondaryLight": "#f06175",
+      "secondaryDark": "#b01425"
+    },
+    "tagline": "Hot, Sweet, In Motion",
+    "desc": "Ripe mango orange and bold chili red for lively, appetizing food and drink brands."
+  },
+  {
+    "id": "midnight-teal",
+    "name": "Midnight Teal",
+    "fontFamily": "'Sora', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#0d3b3b",
+      "primaryLight": "#3f6e6e",
+      "primaryDark": "#062424",
+      "secondary": "#f4a261",
+      "secondaryLight": "#f8c193",
+      "secondaryDark": "#c77d3a"
+    },
+    "tagline": "Deep Calm, Warm Spark",
+    "desc": "Dark teal night and warm amber for grounded, premium and trustworthy brands."
+  },
+  {
+    "id": "lilac-grey",
+    "name": "Lilac Grey",
+    "fontFamily": "'Manrope', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#9893da",
+      "primaryLight": "#bdb9e8",
+      "primaryDark": "#6864ad",
+      "secondary": "#d8d8e0",
+      "secondaryLight": "#eeeef2",
+      "secondaryDark": "#aaaab3"
+    },
+    "tagline": "Soft Tech, Gentle Touch",
+    "desc": "Muted lilac and cool grey for calm, modern SaaS and productivity brands."
+  },
+  {
+    "id": "coral-sunset",
+    "name": "Coral Sunset",
+    "fontFamily": "'Outfit', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#ff7e5f",
+      "primaryLight": "#ffa791",
+      "primaryDark": "#cc5a40",
+      "secondary": "#feb47b",
+      "secondaryLight": "#ffcda3",
+      "secondaryDark": "#cc8c56"
+    },
+    "tagline": "Where Sky Meets Sea",
+    "desc": "Warm coral and soft apricot for dreamy, optimistic travel and lifestyle brands."
+  },
+  {
+    "id": "forest-berry",
+    "name": "Forest Berry",
+    "fontFamily": "'Fraunces', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#2d5a3d",
+      "primaryLight": "#5d876c",
+      "primaryDark": "#1a3625",
+      "secondary": "#9c2150",
+      "secondaryLight": "#bd5b80",
+      "secondaryDark": "#6e1538"
+    },
+    "tagline": "Wild Fruit, Deep Roots",
+    "desc": "Dark forest green and rich berry for organic, premium and natural food brands."
+  },
+  {
+    "id": "steel-rose",
+    "name": "Steel Rose",
+    "fontFamily": "'Libre Franklin', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#5d6d7e",
+      "primaryLight": "#8a97a4",
+      "primaryDark": "#3c4856",
+      "secondary": "#e8a0a8",
+      "secondaryLight": "#f2c4c9",
+      "secondaryDark": "#bd757d"
+    },
+    "tagline": "Strong, Soft, Modern",
+    "desc": "Cool steel blue and dusty rose for balanced, contemporary corporate brands."
+  },
+  {
+    "id": "golden-hour",
+    "name": "Golden Hour",
+    "fontFamily": "'Newsreader', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#e6a817",
+      "primaryLight": "#f0c659",
+      "primaryDark": "#b07f0d",
+      "secondary": "#7d4e57",
+      "secondaryLight": "#a47a82",
+      "secondaryDark": "#54323a"
+    },
+    "tagline": "The Light Before Dusk",
+    "desc": "Warm golden glow and muted plum for cinematic, nostalgic photography brands."
+  },
+  {
+    "id": "icy-rose",
+    "name": "Icy Rose",
+    "fontFamily": "'Work Sans', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#d88c9a",
+      "primaryLight": "#e8b5bf",
+      "primaryDark": "#aa6472",
+      "secondary": "#8fc1d4",
+      "secondaryLight": "#b8d9e5",
+      "secondaryDark": "#5f93a6"
+    },
+    "tagline": "Cool Tones, Warm Heart",
+    "desc": "Soft rose and icy blue for gentle, modern beauty and skincare brands."
+  },
+  {
+    "id": "deep-olive",
+    "name": "Deep Olive",
+    "fontFamily": "'Lora', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#454b1b",
+      "primaryLight": "#6f7544",
+      "primaryDark": "#2a2e0f",
+      "secondary": "#c2b280",
+      "secondaryLight": "#d8cda6",
+      "secondaryDark": "#948553"
+    },
+    "tagline": "Quiet Strength Of The Land",
+    "desc": "Deep army olive and dry wheat for rugged, heritage outdoor and workwear brands."
+  },
+  {
+    "id": "magenta-storm",
+    "name": "Magenta Storm",
+    "fontFamily": "'Space Grotesk', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#c2185b",
+      "primaryLight": "#dd5d8c",
+      "primaryDark": "#8a0f3f",
+      "secondary": "#311b92",
+      "secondaryLight": "#6149bb",
+      "secondaryDark": "#1f1066"
+    },
+    "tagline": "Bold Fronts, Electric Skies",
+    "desc": "Vivid magenta and deep electric indigo for dramatic, creative tech brands."
+  },
+  {
+    "id": "sand-and-sea",
+    "name": "Sand & Sea",
+    "fontFamily": "'Manrope', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#0096c7",
+      "primaryLight": "#4db8db",
+      "primaryDark": "#006d94",
+      "secondary": "#e9d8a6",
+      "secondaryLight": "#f3e8c7",
+      "secondaryDark": "#bca874"
+    },
+    "tagline": "Where The Tide Turns",
+    "desc": "Ocean blue and warm beach sand for breezy coastal and travel brand identities."
+  },
+  {
+    "id": "plum-velvet",
+    "name": "Plum Velvet",
+    "fontFamily": "'DM Serif Display', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap",
+    "colors": {
+      "primary": "#6a1b4d",
+      "primaryLight": "#974b79",
+      "primaryDark": "#430f30",
+      "secondary": "#e0b1cb",
+      "secondaryLight": "#eecfdf",
+      "secondaryDark": "#b3829e"
+    },
+    "tagline": "Luxe, Deep, Romantic",
+    "desc": "Rich plum and soft orchid for elegant, sensual beauty and fashion brands."
+  },
+  {
+    "id": "kelp-forest",
+    "name": "Kelp Forest",
+    "fontFamily": "'Bitter', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#1b4332",
+      "primaryLight": "#487058",
+      "primaryDark": "#0e2a1e",
+      "secondary": "#95d5b2",
+      "secondaryLight": "#bfe6d2",
+      "secondaryDark": "#669e82"
+    },
+    "tagline": "Deep, Green, Alive",
+    "desc": "Dark sea-forest green and bright kelp for calm, natural and eco-minded brands."
+  },
+  {
+    "id": "sunflower-field",
+    "name": "Sunflower Field",
+    "fontFamily": "'Outfit', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#f4c430",
+      "primaryLight": "#f8d871",
+      "primaryDark": "#c79a17",
+      "secondary": "#6a994e",
+      "secondaryLight": "#94bd7c",
+      "secondaryDark": "#476530"
+    },
+    "tagline": "Faces To The Sun",
+    "desc": "Bright sunflower yellow and field green for cheerful, wholesome farm brands."
+  },
+  {
+    "id": "ash-and-ember",
+    "name": "Ash & Ember",
+    "fontFamily": "'Roboto Slab', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#52524e",
+      "primaryLight": "#7e7e79",
+      "primaryDark": "#333330",
+      "secondary": "#d35400",
+      "secondaryLight": "#e3853f",
+      "secondaryDark": "#9e3f00"
+    },
+    "tagline": "Cool Ash, Warm Coal",
+    "desc": "Smoky ash grey and glowing ember orange for rugged, grilled and craft brands."
+  },
+  {
+    "id": "cornflower",
+    "name": "Cornflower",
+    "fontFamily": "'Manrope', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#6495ed",
+      "primaryLight": "#94b6f3",
+      "primaryDark": "#4470c0",
+      "secondary": "#fef9e7",
+      "secondaryLight": "#ffffff",
+      "secondaryDark": "#d6d1bf"
+    },
+    "tagline": "Clear Skies, Open Fields",
+    "desc": "Bright cornflower blue and soft cream for fresh, friendly and trustworthy brands."
+  },
+  {
+    "id": "burnt-rose",
+    "name": "Burnt Rose",
+    "fontFamily": "'Cormorant Garamond', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap",
+    "colors": {
+      "primary": "#a4515f",
+      "primaryLight": "#c17e89",
+      "primaryDark": "#74343f",
+      "secondary": "#e8d5c4",
+      "secondaryLight": "#f3e7db",
+      "secondaryDark": "#c2ad99"
+    },
+    "tagline": "Faded Petals, Lasting Beauty",
+    "desc": "Muted burnt rose and warm sand for romantic, vintage and editorial brands."
+  },
+  {
+    "id": "electric-teal",
+    "name": "Electric Teal",
+    "fontFamily": "'Epilogue', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#00f5d4",
+      "primaryLight": "#66f9e3",
+      "primaryDark": "#00b8a0",
+      "secondary": "#1a1a2e",
+      "secondaryLight": "#45455f",
+      "secondaryDark": "#0d0d18"
+    },
+    "tagline": "Charged And Cool",
+    "desc": "Bright electric teal on deep navy for sleek, futuristic fintech and tech brands."
+  },
+  {
+    "id": "terra-rosa",
+    "name": "Terra Rosa",
+    "fontFamily": "'Spectral', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#bc4749",
+      "primaryLight": "#d27c7d",
+      "primaryDark": "#8c3032",
+      "secondary": "#a7c957",
+      "secondaryLight": "#c4dd8c",
+      "secondaryDark": "#7c9b34"
+    },
+    "tagline": "Clay Earth, Fresh Growth",
+    "desc": "Warm brick red and lively lime for grounded yet energetic organic brands."
+  },
+  {
+    "id": "navy-mustard",
+    "name": "Navy Mustard",
+    "fontFamily": "'Libre Franklin', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#1d2d50",
+      "primaryLight": "#4c5a7a",
+      "primaryDark": "#0f1a30",
+      "secondary": "#e0a500",
+      "secondaryLight": "#eec24d",
+      "secondaryDark": "#a87c00"
+    },
+    "tagline": "Sharp, Classic, Confident",
+    "desc": "Deep navy and warm mustard for smart, tailored and editorial corporate brands."
+  },
+  {
+    "id": "rose-gold",
+    "name": "Rose Gold",
+    "fontFamily": "'Playfair Display', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap",
+    "colors": {
+      "primary": "#b76e79",
+      "primaryLight": "#cf99a1",
+      "primaryDark": "#8a4e57",
+      "secondary": "#eaca8e",
+      "secondaryLight": "#f2dcb5",
+      "secondaryDark": "#bd9c5f"
+    },
+    "tagline": "Soft Metal, Quiet Luxe",
+    "desc": "Blush rose gold and warm champagne for elegant, premium beauty and jewelry brands."
+  },
+  {
+    "id": "spruce-tip",
+    "name": "Spruce Tip",
+    "fontFamily": "'Work Sans', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#2f4858",
+      "primaryLight": "#5b727f",
+      "primaryDark": "#1c2d38",
+      "secondary": "#86bbbd",
+      "secondaryLight": "#aed3d4",
+      "secondaryDark": "#5c8e90"
+    },
+    "tagline": "Cold Air, Clear Mind",
+    "desc": "Deep spruce slate and soft glacier teal for calm, outdoorsy and minimal brands."
+  },
+  {
+    "id": "apricot-jam",
+    "name": "Apricot Jam",
+    "fontFamily": "'Outfit', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#f08a5d",
+      "primaryLight": "#f6b08e",
+      "primaryDark": "#c0653c",
+      "secondary": "#b83b5e",
+      "secondaryLight": "#d0718a",
+      "secondaryDark": "#8a2843"
+    },
+    "tagline": "Sweet, Tart, Homemade",
+    "desc": "Warm apricot and deep raspberry for cozy, artisanal preserves and bakery brands."
+  },
+  {
+    "id": "iris-bloom",
+    "name": "Iris Bloom",
+    "fontFamily": "'Fraunces', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#5f4b8b",
+      "primaryLight": "#8a78ad",
+      "primaryDark": "#3f3160",
+      "secondary": "#e6b89c",
+      "secondaryLight": "#f0d0bd",
+      "secondaryDark": "#bd8c70"
+    },
+    "tagline": "Petals Of Deep Color",
+    "desc": "Royal iris purple and warm peach for elegant, creative and floral brand stories."
+  },
+  {
+    "id": "moss-stone",
+    "name": "Moss Stone",
+    "fontFamily": "'Lora', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#606c5d",
+      "primaryLight": "#8a9486",
+      "primaryDark": "#3f483d",
+      "secondary": "#d6ccc2",
+      "secondaryLight": "#e8e1da",
+      "secondaryDark": "#a89e93"
+    },
+    "tagline": "Quiet Nature, Soft Edges",
+    "desc": "Mossy green-grey and warm stone for calm, organic and architectural brands."
+  },
+  {
+    "id": "scarlet-ink",
+    "name": "Scarlet Ink",
+    "fontFamily": "'Zilla Slab', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#c1121f",
+      "primaryLight": "#d75760",
+      "primaryDark": "#8a0c16",
+      "secondary": "#1e1e24",
+      "secondaryLight": "#4a4a52",
+      "secondaryDark": "#0f0f13"
+    },
+    "tagline": "Bold Words, Dark Page",
+    "desc": "Vivid scarlet and deep ink for striking editorial, news and publishing brands."
+  },
+  {
+    "id": "seaglass",
+    "name": "Seaglass",
+    "fontFamily": "'Manrope', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#88b8a3",
+      "primaryLight": "#b0d2c3",
+      "primaryDark": "#5d8a76",
+      "secondary": "#e8e3d3",
+      "secondaryLight": "#f5f1e8",
+      "secondaryDark": "#c2bca9"
+    },
+    "tagline": "Worn Smooth By The Tide",
+    "desc": "Soft seaglass green and pale sand for calm, coastal and wellness brand looks."
+  },
+  {
+    "id": "amber-noir",
+    "name": "Amber Noir",
+    "fontFamily": "'DM Serif Display', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap",
+    "colors": {
+      "primary": "#e8920c",
+      "primaryLight": "#f2b450",
+      "primaryDark": "#b06c06",
+      "secondary": "#1c1c1c",
+      "secondaryLight": "#454545",
+      "secondaryDark": "#0a0a0a"
+    },
+    "tagline": "Warm Light, Dark Room",
+    "desc": "Glowing amber and deep black for moody, cinematic whisky and lounge brands."
+  },
+  {
+    "id": "fjord-blue",
+    "name": "Fjord Blue",
+    "fontFamily": "'Sora', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#386890",
+      "primaryLight": "#6a92b3",
+      "primaryDark": "#244660",
+      "secondary": "#d9e4dd",
+      "secondaryLight": "#eef3f0",
+      "secondaryDark": "#aab5ae"
+    },
+    "tagline": "Still Water, Deep North",
+    "desc": "Muted fjord blue and pale mist for calm, Scandinavian-minimal and travel brands."
   }
 ]
