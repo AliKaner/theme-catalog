@@ -3298,5 +3298,502 @@
     "tagline": "A Light In The Dark",
     "desc": "A bright green beacon glow on dark for bold, guiding and futuristic tech brands.",
     "variant": "spotlight"
+  },
+  {
+    "id": "saffron-silk",
+    "name": "Saffron Silk",
+    "fontFamily": "'Cormorant Garamond', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap",
+    "colors": {
+      "primary": "#e0a82e",
+      "primaryLight": "#eec468",
+      "primaryDark": "#aa7c18",
+      "secondary": "#9a3b3b",
+      "secondaryLight": "#bd6c6c",
+      "secondaryDark": "#6e2424"
+    },
+    "tagline": "Threads Of Warm Light",
+    "desc": "Golden saffron and deep madder red for rich, luxurious heritage and textile brands."
+  },
+  {
+    "id": "mint-julep",
+    "name": "Mint Julep",
+    "fontFamily": "'Outfit', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#74c69d",
+      "primaryLight": "#9ed9bb",
+      "primaryDark": "#4f9b74",
+      "secondary": "#d8f3dc",
+      "secondaryLight": "#edf9ef",
+      "secondaryDark": "#aacbb0"
+    },
+    "tagline": "Cool, Crisp, Southern",
+    "desc": "Fresh mint and pale dew green for breezy, refreshing drink and lifestyle brands."
+  },
+  {
+    "id": "ink-and-gold",
+    "name": "Ink & Gold",
+    "fontFamily": "'Playfair Display', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap",
+    "colors": {
+      "primary": "#0b132b",
+      "primaryLight": "#3a4566",
+      "primaryDark": "#050a18",
+      "secondary": "#c8a04b",
+      "secondaryLight": "#dcc081",
+      "secondaryDark": "#977629"
+    },
+    "tagline": "Written In Fine Lines",
+    "desc": "Deep ink navy and antique gold for elegant, editorial and premium print brands.",
+    "variant": "spotlight"
+  },
+  {
+    "id": "coral-glass",
+    "name": "Coral Glass",
+    "fontFamily": "'Sora', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#ff7e6b",
+      "primaryLight": "#ffa595",
+      "primaryDark": "#cc5a49",
+      "secondary": "#7b2cbf",
+      "secondaryLight": "#a363d6",
+      "secondaryDark": "#561d86"
+    },
+    "tagline": "Warm Light Through Glass",
+    "desc": "Coral and violet behind frosted glass for bold, modern app and product brands.",
+    "variant": "glass"
+  },
+  {
+    "id": "olive-neu",
+    "name": "Olive Soft",
+    "fontFamily": "'Manrope', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#8a8b3c",
+      "primaryLight": "#aeae6e",
+      "primaryDark": "#5f6025",
+      "secondary": "#b5b682",
+      "secondaryLight": "#d0d1a8",
+      "secondaryDark": "#888a58"
+    },
+    "tagline": "Gentle Earth Tones",
+    "desc": "Soft olive accents on a pillowy surface for calm, natural and organic app brands.",
+    "variant": "neu"
+  },
+  {
+    "id": "crimson-grid",
+    "name": "Crimson Grid",
+    "fontFamily": "'Space Mono', monospace",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap",
+    "colors": {
+      "primary": "#ef233c",
+      "primaryLight": "#f4677a",
+      "primaryDark": "#b8182c",
+      "secondary": "#2b0a0e",
+      "secondaryLight": "#5e2c32",
+      "secondaryDark": "#160406"
+    },
+    "tagline": "Plotted In Red",
+    "desc": "Crimson grid lines on dark for bold data, esports and high-energy tech brands.",
+    "variant": "grid"
+  },
+  {
+    "id": "lavender-duotone",
+    "name": "Lavender Duotone",
+    "fontFamily": "'Unbounded', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&display=swap",
+    "colors": {
+      "primary": "#b298dc",
+      "primaryLight": "#ccb8e8",
+      "primaryDark": "#8669b5",
+      "secondary": "#2d1b4e",
+      "secondaryLight": "#553f7a",
+      "secondaryDark": "#1a0f30"
+    },
+    "tagline": "Soft Split, Bold Frame",
+    "desc": "Light lavender and deep purple split for creative, dreamy and music brand looks.",
+    "variant": "duotone"
+  },
+  {
+    "id": "emerald-scan",
+    "name": "Emerald Scan",
+    "fontFamily": "'VT323', monospace",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=VT323&display=swap",
+    "colors": {
+      "primary": "#00d97e",
+      "primaryLight": "#5ce8aa",
+      "primaryDark": "#00a35f",
+      "secondary": "#001a10",
+      "secondaryLight": "#0a3a26",
+      "secondaryDark": "#000d08"
+    },
+    "tagline": "SCANNING TARGET",
+    "desc": "Emerald scanlines on black for retro sci-fi, terminal and developer-tool brands.",
+    "variant": "scanline"
+  },
+  {
+    "id": "peach-wire",
+    "name": "Peach Wire",
+    "fontFamily": "'IBM Plex Mono', monospace",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#ffb3a0",
+      "primaryLight": "#ffccbe",
+      "primaryDark": "#cc8773",
+      "secondary": "#1a1418",
+      "secondaryLight": "#443a40",
+      "secondaryDark": "#0c090b"
+    },
+    "tagline": "Soft Lines, Sharp Mind",
+    "desc": "Peach dashed wireframe on near-black for gentle, lo-fi and prototyping brands.",
+    "variant": "outline"
+  },
+  {
+    "id": "sunrise-mesh",
+    "name": "Sunrise Mesh",
+    "fontFamily": "'Space Grotesk', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#ffcf56",
+      "primaryLight": "#ffe093",
+      "primaryDark": "#cca22f",
+      "secondary": "#ff5e78",
+      "secondaryLight": "#ff8fa1",
+      "secondaryDark": "#cc4a5f"
+    },
+    "tagline": "First Light, Soft Blend",
+    "desc": "Warm yellow and pink mesh for cheerful, fresh and optimistic lifestyle brands.",
+    "variant": "mesh"
+  },
+  {
+    "id": "concrete-rose",
+    "name": "Concrete Rose",
+    "fontFamily": "'Archivo Black', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap",
+    "colors": {
+      "primary": "#d56b7e",
+      "primaryLight": "#e29aa8",
+      "primaryDark": "#a44a5b",
+      "secondary": "#e8e6e1",
+      "secondaryLight": "#f6f5f2",
+      "secondaryDark": "#bcbab5"
+    },
+    "tagline": "BEAUTY IN THE BRUTAL",
+    "desc": "Dusty rose on raw concrete for bold, brutalist fashion and editorial brands.",
+    "variant": "flat"
+  },
+  {
+    "id": "midnight-orchid",
+    "name": "Midnight Orchid",
+    "fontFamily": "'DM Serif Display', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap",
+    "colors": {
+      "primary": "#5a189a",
+      "primaryLight": "#834dbb",
+      "primaryDark": "#3c0f6b",
+      "secondary": "#ff6ec7",
+      "secondaryLight": "#ff9bd8",
+      "secondaryDark": "#cc509e"
+    },
+    "tagline": "Deep Bloom At Night",
+    "desc": "Royal purple and bright orchid pink for luxurious, dramatic beauty and event brands."
+  },
+  {
+    "id": "toasted-almond",
+    "name": "Toasted Almond",
+    "fontFamily": "'Lora', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#b08968",
+      "primaryLight": "#cba98e",
+      "primaryDark": "#856042",
+      "secondary": "#ede0d4",
+      "secondaryLight": "#f8f0e8",
+      "secondaryDark": "#c8b8a6"
+    },
+    "tagline": "Warm, Nutty, Natural",
+    "desc": "Toasted almond brown and soft cream for cozy, organic food and skincare brands."
+  },
+  {
+    "id": "electric-grape",
+    "name": "Electric Grape",
+    "fontFamily": "'Epilogue', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#8e2de2",
+      "primaryLight": "#ad63ec",
+      "primaryDark": "#6418a8",
+      "secondary": "#4a00e0",
+      "secondaryLight": "#7b3df0",
+      "secondaryDark": "#3300a0"
+    },
+    "tagline": "Charged Purple Energy",
+    "desc": "Vivid grape and electric indigo for bold, futuristic gaming and tech brands."
+  },
+  {
+    "id": "sea-salt",
+    "name": "Sea Salt",
+    "fontFamily": "'Work Sans', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#5c8d89",
+      "primaryLight": "#88afac",
+      "primaryDark": "#3d605d",
+      "secondary": "#f0ece2",
+      "secondaryLight": "#faf7f0",
+      "secondaryDark": "#cbc6ba"
+    },
+    "tagline": "Calm Coastal Neutrals",
+    "desc": "Muted sea green and warm salt white for serene, minimal coastal and spa brands."
+  },
+  {
+    "id": "blood-orange",
+    "name": "Blood Orange",
+    "fontFamily": "'Zilla Slab', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#e2552a",
+      "primaryLight": "#ee8763",
+      "primaryDark": "#a83c18",
+      "secondary": "#3d1308",
+      "secondaryLight": "#6e3a2a",
+      "secondaryDark": "#220a04"
+    },
+    "tagline": "Bittersweet And Bold",
+    "desc": "Deep blood orange and dark cocoa for warm, punchy food and craft drink brands."
+  },
+  {
+    "id": "glacier-glass",
+    "name": "Glacier Glass",
+    "fontFamily": "'Manrope', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#90e0ef",
+      "primaryLight": "#b8ecf4",
+      "primaryDark": "#5fb6c7",
+      "secondary": "#0077b6",
+      "secondaryLight": "#4ba0d1",
+      "secondaryDark": "#005485"
+    },
+    "tagline": "Cold, Clear, Pristine",
+    "desc": "Icy cyan and deep blue behind glass for crisp, modern travel and tech brands.",
+    "variant": "glass"
+  },
+  {
+    "id": "marigold-grid",
+    "name": "Marigold Grid",
+    "fontFamily": "'Chivo Mono', monospace",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#f6ae2d",
+      "primaryLight": "#f9c769",
+      "primaryDark": "#c2851a",
+      "secondary": "#1a1505",
+      "secondaryLight": "#463c1c",
+      "secondaryDark": "#0c0902"
+    },
+    "tagline": "Mapped In Gold",
+    "desc": "Marigold grid lines on dark for warm, technical analytics and dashboard brands.",
+    "variant": "grid"
+  },
+  {
+    "id": "rose-duotone",
+    "name": "Rose Duotone",
+    "fontFamily": "'Syne', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&display=swap",
+    "colors": {
+      "primary": "#ff4d6d",
+      "primaryLight": "#ff819a",
+      "primaryDark": "#cc3a54",
+      "secondary": "#1d1135",
+      "secondaryLight": "#473a5e",
+      "secondaryDark": "#0f0820"
+    },
+    "tagline": "Split In Two, Loud As One",
+    "desc": "Hot rose and deep night split for bold, graphic music and poster brands.",
+    "variant": "duotone"
+  },
+  {
+    "id": "amber-spotlight",
+    "name": "Amber Spotlight",
+    "fontFamily": "'Sora', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#ffb627",
+      "primaryLight": "#ffcd68",
+      "primaryDark": "#cc8f12",
+      "secondary": "#1c1400",
+      "secondaryLight": "#46380f",
+      "secondaryDark": "#0c0900"
+    },
+    "tagline": "Caught In The Glow",
+    "desc": "A warm amber spotlight on dark for premium, focused event and product brands.",
+    "variant": "spotlight"
+  },
+  {
+    "id": "cactus-flower",
+    "name": "Cactus Flower",
+    "fontFamily": "'Outfit', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#5f8d4e",
+      "primaryLight": "#88ac7b",
+      "primaryDark": "#41632f",
+      "secondary": "#ec4e8c",
+      "secondaryLight": "#f283ad",
+      "secondaryDark": "#bd3a6c"
+    },
+    "tagline": "Tough Plant, Bright Bloom",
+    "desc": "Desert green and hot pink bloom for lively, organic and youthful brand looks."
+  },
+  {
+    "id": "stone-blue",
+    "name": "Stone Blue",
+    "fontFamily": "'Libre Franklin', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#577590",
+      "primaryLight": "#82a0b5",
+      "primaryDark": "#3a5167",
+      "secondary": "#e0e1dd",
+      "secondaryLight": "#f1f1ef",
+      "secondaryDark": "#b4b5b1"
+    },
+    "tagline": "Steady, Calm, Reliable",
+    "desc": "Muted stone blue and light grey for trustworthy, professional corporate brands."
+  },
+  {
+    "id": "chartreuse-noir",
+    "name": "Chartreuse Noir",
+    "fontFamily": "'Space Grotesk', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#dfff4f",
+      "primaryLight": "#eaff8a",
+      "primaryDark": "#aac21f",
+      "secondary": "#16160f",
+      "secondaryLight": "#42423a",
+      "secondaryDark": "#080804"
+    },
+    "tagline": "Sharp Green, Deep Dark",
+    "desc": "Electric chartreuse on near-black for bold, edgy streetwear and tech brands."
+  },
+  {
+    "id": "terra-glass",
+    "name": "Terra Glass",
+    "fontFamily": "'Epilogue', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#cb6843",
+      "primaryLight": "#dc9275",
+      "primaryDark": "#9a4b2e",
+      "secondary": "#3a7d6e",
+      "secondaryLight": "#6fa599",
+      "secondaryDark": "#27564b"
+    },
+    "tagline": "Earth Behind Glass",
+    "desc": "Terracotta and teal behind frosted glass for warm, grounded modern brands.",
+    "variant": "glass"
+  },
+  {
+    "id": "vintage-teal",
+    "name": "Vintage Teal",
+    "fontFamily": "'Newsreader', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#37798a",
+      "primaryLight": "#69a0ae",
+      "primaryDark": "#24535f",
+      "secondary": "#e9c46a",
+      "secondaryLight": "#f0d79a",
+      "secondaryDark": "#bd9a3e"
+    },
+    "tagline": "Faded Postcard Charm",
+    "desc": "Muted vintage teal and warm gold for nostalgic, editorial travel brand looks."
+  },
+  {
+    "id": "neon-tangerine",
+    "name": "Neon Tangerine",
+    "fontFamily": "'Bungee', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Bungee&display=swap",
+    "colors": {
+      "primary": "#ff6000",
+      "primaryLight": "#ff8c40",
+      "primaryDark": "#c44900",
+      "secondary": "#00b4d8",
+      "secondaryLight": "#4dccea",
+      "secondaryDark": "#0089a8"
+    },
+    "tagline": "TURN IT WAY UP",
+    "desc": "Blazing tangerine and electric cyan split for loud, urban poster-style brands.",
+    "variant": "duotone"
+  },
+  {
+    "id": "moss-spotlight",
+    "name": "Moss Spotlight",
+    "fontFamily": "'Sora', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#7fb069",
+      "primaryLight": "#a4c894",
+      "primaryDark": "#578544",
+      "secondary": "#0c130d",
+      "secondaryLight": "#34402f",
+      "secondaryDark": "#060a06"
+    },
+    "tagline": "Light On The Forest Floor",
+    "desc": "A soft moss-green glow on dark for calm, natural and outdoor-focused brands.",
+    "variant": "spotlight"
+  },
+  {
+    "id": "raspberry-mesh",
+    "name": "Raspberry Mesh",
+    "fontFamily": "'Outfit', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#e63973",
+      "primaryLight": "#ef74a0",
+      "primaryDark": "#b32856",
+      "secondary": "#9d4edd",
+      "secondaryLight": "#bd82e8",
+      "secondaryDark": "#722eaa"
+    },
+    "tagline": "Berry Bright, Blurred Soft",
+    "desc": "Raspberry pink and violet mesh for vibrant, creative beauty and fashion brands.",
+    "variant": "mesh"
+  },
+  {
+    "id": "khaki-field",
+    "name": "Khaki Field",
+    "fontFamily": "'Roboto Slab', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#8f8b66",
+      "primaryLight": "#b0ad90",
+      "primaryDark": "#646043",
+      "secondary": "#c1440e",
+      "secondaryLight": "#d77a4f",
+      "secondaryDark": "#8d3009"
+    },
+    "tagline": "Rugged And Ready",
+    "desc": "Faded khaki and rust orange for tough, outdoor, military-inspired workwear brands."
+  },
+  {
+    "id": "porcelain-blue",
+    "name": "Porcelain Blue",
+    "fontFamily": "'Cormorant Garamond', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap",
+    "colors": {
+      "primary": "#4a6fa5",
+      "primaryLight": "#7b97c2",
+      "primaryDark": "#314c75",
+      "secondary": "#f4f1ec",
+      "secondaryLight": "#fdfcfa",
+      "secondaryDark": "#cfccc6"
+    },
+    "tagline": "Delicate, Classic, Fine",
+    "desc": "Soft porcelain blue and cream for refined, elegant ceramic and heritage brands."
   }
 ]

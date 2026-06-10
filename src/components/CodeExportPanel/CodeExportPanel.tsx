@@ -2,16 +2,43 @@ import React, { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Check, Copy, FileCode2 } from 'lucide-react';
 import classNames from 'classnames';
-import type { CodeExportPanelProps, ExportTab } from './CodeExportPanel.types';
+import type { CodeExportPanelProps, ExportTab, ExportTech } from './CodeExportPanel.types';
 import type { ThemeConfig, ThemeVariant } from '../../pages/ThemeCatalog/ThemeCatalog.types';
 import styles from './CodeExportPanel.module.scss';
 
-// Generate ready-to-use button CSS whose borders, corners and edges match the
-// theme's surface variant, so users can copy the exact button look they see.
-const buildButtonCss = (theme: ThemeConfig, variant: ThemeVariant): string => {
+// The frameworks the user can target from the selector on the right.
+const TECHS: { id: ExportTech; label: string }[] = [
+  { id: 'css', label: 'Plain CSS' },
+  { id: 'scss', label: 'SCSS' },
+  { id: 'tailwind', label: 'Tailwind' },
+  { id: 'nextjs', label: 'Next.js' },
+  { id: 'nuxtjs', label: 'Nuxt.js' },
+  { id: 'json', label: 'JSON' },
+];
+
+const resolveVariant = (theme: ThemeConfig): ThemeVariant =>
+  theme.variant ?? (theme.flat ? 'flat' : 'gradient');
+
+// The :root custom properties block, shared by every CSS-based target.
+const rootVars = (theme: ThemeConfig): string => {
   const c = theme.colors;
+  return `:root {
+  --color-primary: ${c.primary};
+  --color-primary-light: ${c.primaryLight};
+  --color-primary-dark: ${c.primaryDark};
+  --color-secondary: ${c.secondary};
+  --color-secondary-light: ${c.secondaryLight};
+  --color-secondary-dark: ${c.secondaryDark};
+  --font-family: ${theme.fontFamily};
+}`;
+};
+
+// Button classes whose borders / corners / edges match the theme's surface
+// variant. Everything references the CSS variables above so it can live in a
+// single global stylesheet.
+const buttonRules = (variant: ThemeVariant): string => {
   const base = `.btn {
-  font-family: ${theme.fontFamily};
+  font-family: var(--font-family);
   font-weight: 600;
   padding: 10px 22px;
   cursor: pointer;
@@ -21,31 +48,29 @@ const buildButtonCss = (theme: ThemeConfig, variant: ThemeVariant): string => {
 
   switch (variant) {
     case 'flat':
-      return `/* ${theme.name} — brutalist / hard-edge buttons */
-${base}
+      return `${base}
 
 .btn-primary {
-  background: ${c.primary};
-  color: ${c.secondaryLight};
+  background: var(--color-primary);
+  color: var(--color-secondary-light);
   border: 2px solid #14151b;       /* hard edge */
   border-radius: 0;                /* sharp corners */
-  box-shadow: 4px 4px 0 ${c.primaryDark};  /* offset block shadow */
+  box-shadow: 4px 4px 0 var(--color-primary-dark);
 }
-.btn-primary:hover { box-shadow: 6px 6px 0 ${c.primaryDark}; }
+.btn-primary:hover { box-shadow: 6px 6px 0 var(--color-primary-dark); }
 
 .btn-outline {
   background: transparent;
-  color: ${c.primaryDark};
-  border: 2px solid ${c.primaryDark};
+  color: var(--color-primary-dark);
+  border: 2px solid var(--color-primary-dark);
   border-radius: 0;
 }`;
     case 'neu':
-      return `/* ${theme.name} — soft neumorphic buttons */
-${base}
+      return `${base}
 
 .btn-primary {
   background: #e2e5ec;
-  color: ${c.primaryDark};
+  color: var(--color-primary-dark);
   border: none;
   border-radius: 14px;             /* soft rounded corners */
   box-shadow: 6px 6px 12px #b9bdc6, -6px -6px 12px #ffffff;
@@ -54,17 +79,16 @@ ${base}
 
 .btn-outline {
   background: #e2e5ec;
-  color: ${c.primary};
+  color: var(--color-primary);
   border: none;
   border-radius: 14px;
   box-shadow: inset 3px 3px 7px #b9bdc6, inset -3px -3px 7px #ffffff;
 }`;
     case 'glass':
-      return `/* ${theme.name} — frosted glass buttons */
-${base}
+      return `${base}
 
 .btn-primary {
-  background: color-mix(in srgb, ${c.primary} 32%, transparent);
+  background: color-mix(in srgb, var(--color-primary) 32%, transparent);
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.28);  /* light glass edge */
   border-radius: 12px;             /* rounded corners */
@@ -75,49 +99,46 @@ ${base}
 .btn-outline {
   background: rgba(255, 255, 255, 0.06);
   color: #ffffff;
-  border: 1px solid color-mix(in srgb, ${c.secondary} 55%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-secondary) 55%, transparent);
   border-radius: 12px;
   backdrop-filter: blur(8px);
 }`;
     case 'outline':
-      return `/* ${theme.name} — wireframe / outline buttons */
-${base}
+      return `${base}
 
 .btn-primary {
   background: transparent;
-  color: ${c.primaryLight};
-  border: 1px dashed ${c.primary};  /* dashed edge */
+  color: var(--color-primary-light);
+  border: 1px dashed var(--color-primary);  /* dashed edge */
   border-radius: 8px;              /* gently rounded corners */
 }
 .btn-primary:hover { border-style: solid; }
 
 .btn-outline {
   background: transparent;
-  color: ${c.primaryLight};
-  border: 1px solid color-mix(in srgb, ${c.primary} 50%, transparent);
+  color: var(--color-primary-light);
+  border: 1px solid color-mix(in srgb, var(--color-primary) 50%, transparent);
   border-radius: 8px;
 }`;
     case 'duotone':
-      return `/* ${theme.name} — bold duotone buttons */
-${base}
+      return `${base}
 
 .btn-primary {
-  background: ${c.primary};
+  background: var(--color-primary);
   color: #ffffff;
-  border: 2px solid ${c.secondary};  /* contrasting edge */
+  border: 2px solid var(--color-secondary);  /* contrasting edge */
   border-radius: 4px;              /* slightly sharp corners */
 }
 
 .btn-outline {
-  background: ${c.secondary};
+  background: var(--color-secondary);
   color: #ffffff;
-  border: 2px solid ${c.primary};
+  border: 2px solid var(--color-primary);
   border-radius: 4px;
 }`;
     default:
       // gradient, mesh, grid, scanline, spotlight — gradient-border pill buttons
-      return `/* ${theme.name} — gradient-border buttons */
-${base}
+      return `${base}
 
 .btn-primary {
   color: #ffffff;
@@ -125,68 +146,47 @@ ${base}
   border-radius: 8px;              /* rounded corners */
   background:
     linear-gradient(#11131a, #11131a) padding-box,
-    linear-gradient(to right, ${c.primary}, ${c.secondary}) border-box;
+    linear-gradient(to right, var(--color-primary), var(--color-secondary)) border-box;
 }
 .btn-primary:hover {
   background:
     linear-gradient(#181a23, #181a23) padding-box,
-    linear-gradient(to right, ${c.primaryLight}, ${c.secondaryLight}) border-box;
+    linear-gradient(to right, var(--color-primary-light), var(--color-secondary-light)) border-box;
 }
 
 .btn-outline {
   background: transparent;
-  color: ${c.primaryLight};
-  border: 1px solid color-mix(in srgb, ${c.primary} 40%, transparent);
+  color: var(--color-primary-light);
+  border: 1px solid color-mix(in srgb, var(--color-primary) 40%, transparent);
   border-radius: 8px;
 }`;
   }
 };
 
-// Build the list of exportable files for the currently applied theme. Each entry
-// becomes one editor tab the user can read and copy, similar to switching files
-// in VSCode or tabs in a browser.
-const buildTabs = (theme: ThemeConfig): ExportTab[] => {
+const scssVars = (theme: ThemeConfig): string => {
   const c = theme.colors;
-  const fontImport = `@import url('${theme.fontUrl}');`;
-  const fontStack = theme.fontFamily;
-
-  const cssVars = `:root {
-  --color-primary: ${c.primary};
-  --color-primary-light: ${c.primaryLight};
-  --color-primary-dark: ${c.primaryDark};
-  --color-secondary: ${c.secondary};
-  --color-secondary-light: ${c.secondaryLight};
-  --color-secondary-dark: ${c.secondaryDark};
-  --font-family: ${fontStack};
-}`;
-
-  const scss = `// ${theme.name} — theme variables
+  return `// ${theme.name} — theme variables
 $color-primary: ${c.primary};
 $color-primary-light: ${c.primaryLight};
 $color-primary-dark: ${c.primaryDark};
 $color-secondary: ${c.secondary};
 $color-secondary-light: ${c.secondaryLight};
 $color-secondary-dark: ${c.secondaryDark};
-$font-family: ${fontStack};`;
+$font-family: ${theme.fontFamily};`;
+};
 
-  const tailwind = `/** ${theme.name} — tailwind.config.js */
+const tailwindConfig = (theme: ThemeConfig): string => {
+  const c = theme.colors;
+  return `/** ${theme.name} — tailwind.config.js */
 module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: '${c.primary}',
-          light: '${c.primaryLight}',
-          dark: '${c.primaryDark}',
-        },
-        secondary: {
-          DEFAULT: '${c.secondary}',
-          light: '${c.secondaryLight}',
-          dark: '${c.secondaryDark}',
-        },
+        primary: { DEFAULT: '${c.primary}', light: '${c.primaryLight}', dark: '${c.primaryDark}' },
+        secondary: { DEFAULT: '${c.secondary}', light: '${c.secondaryLight}', dark: '${c.secondaryDark}' },
       },
       fontFamily: {
-        theme: [${fontStack
+        theme: [${theme.fontFamily
           .split(',')
           .map((f) => `'${f.trim().replace(/'/g, '')}'`)
           .join(', ')}],
@@ -194,63 +194,94 @@ module.exports = {
     },
   },
 };`;
+};
 
-  const json = JSON.stringify(theme, null, 2);
+// Build the set of files to show for the chosen framework. Everything that can
+// live in one global stylesheet does — buttons included — and only genuinely
+// separate files (configs) get their own tab.
+const buildTabs = (theme: ThemeConfig, tech: ExportTech): ExportTab[] => {
+  const variant = resolveVariant(theme);
+  const fontImport = `@import url('${theme.fontUrl}');`;
+  const header = `/* ${theme.name} — global theme styles */`;
+  const globalCss = `${fontImport}\n\n${header}\n${rootVars(theme)}\n\n${buttonRules(variant)}`;
 
-  // Resolve the surface variant so the button styles match what's on screen.
-  const variant: ThemeVariant = theme.variant ?? (theme.flat ? 'flat' : 'gradient');
-  const buttons = buildButtonCss(theme, variant);
-
-  return [
-    {
-      id: 'css',
-      filename: 'theme.css',
-      language: 'css',
-      dotColor: '#519aba',
-      content: `${fontImport}\n\n${cssVars}`,
-    },
-    {
-      id: 'buttons',
-      filename: 'buttons.css',
-      language: 'css',
-      dotColor: '#e8920c',
-      content: buttons,
-    },
-    {
-      id: 'scss',
-      filename: 'variables.scss',
-      language: 'scss',
-      dotColor: '#cd6799',
-      content: `@import url('${theme.fontUrl}');\n\n${scss}`,
-    },
-    {
-      id: 'tailwind',
-      filename: 'tailwind.config.js',
-      language: 'javascript',
-      dotColor: '#e8d44d',
-      content: tailwind,
-    },
-    {
-      id: 'json',
-      filename: 'theme.json',
-      language: 'json',
-      dotColor: '#8bc34a',
-      content: json,
-    },
-  ];
+  switch (tech) {
+    case 'css':
+      return [
+        { id: 'global', filename: 'global.css', language: 'css', dotColor: '#519aba', path: 'src/styles/global.css', content: globalCss },
+      ];
+    case 'scss':
+      return [
+        {
+          id: 'global',
+          filename: 'global.scss',
+          language: 'scss',
+          dotColor: '#cd6799',
+          path: 'src/styles/global.scss',
+          content: `${fontImport}\n\n${scssVars(theme)}\n\n${header}\n${rootVars(theme)}\n\n${buttonRules(variant)}`,
+        },
+      ];
+    case 'tailwind':
+      return [
+        { id: 'config', filename: 'tailwind.config.js', language: 'javascript', dotColor: '#e8d44d', path: './tailwind.config.js', content: tailwindConfig(theme) },
+        {
+          id: 'global',
+          filename: 'globals.css',
+          language: 'css',
+          dotColor: '#519aba',
+          path: 'src/globals.css',
+          content: `@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\n${fontImport}\n\n${rootVars(theme)}\n\n${buttonRules(variant)}`,
+        },
+      ];
+    case 'nextjs':
+      return [
+        {
+          id: 'global',
+          filename: 'globals.css',
+          language: 'css',
+          dotColor: '#519aba',
+          path: 'app/globals.css',
+          content: globalCss,
+        },
+      ];
+    case 'nuxtjs':
+      return [
+        { id: 'global', filename: 'main.css', language: 'css', dotColor: '#519aba', path: 'assets/css/main.css', content: globalCss },
+        {
+          id: 'config',
+          filename: 'nuxt.config.ts',
+          language: 'typescript',
+          dotColor: '#41b883',
+          path: './nuxt.config.ts',
+          content: `// Register the global theme stylesheet\nexport default defineNuxtConfig({\n  css: ['~/assets/css/main.css'],\n})`,
+        },
+      ];
+    case 'json':
+    default:
+      return [
+        { id: 'json', filename: 'theme.json', language: 'json', dotColor: '#8bc34a', path: 'src/theme.json', content: JSON.stringify(theme, null, 2) },
+      ];
+  }
 };
 
 const CodeExportPanel = (props: CodeExportPanelProps) => {
   const { theme } = props;
   const { t } = useTranslation();
 
-  // Recompute the export tabs whenever the applied theme changes.
-  const tabs: ExportTab[] = useMemo(() => buildTabs(theme), [theme]);
-
-  const [activeTabId, setActiveTabId] = useState<string>(tabs[0].id);
+  const [tech, setTech] = useState<ExportTech>('css');
+  const [activeTabId, setActiveTabId] = useState<string>('global');
   const [copied, setCopied] = useState<boolean>(false);
 
+  // Recompute the export files whenever the theme or target framework changes.
+  const tabs: ExportTab[] = useMemo(() => buildTabs(theme, tech), [theme, tech]);
+
   const activeTab: ExportTab = tabs.find((tab) => tab.id === activeTabId) ?? tabs[0];
+
+  const handleTechChange = (next: ExportTech): void => {
+    setTech(next);
+    setActiveTabId('global'); // reset to the primary file; falls back if absent
+    setCopied(false);
+  };
 
   // Copy the currently visible file content to the clipboard with feedback.
   const handleCopy = async (): Promise<void> => {
@@ -259,12 +290,10 @@ const CodeExportPanel = (props: CodeExportPanelProps) => {
       setCopied(true);
       window.setTimeout((): void => setCopied(false), 1600);
     } catch {
-      // Clipboard can be unavailable (e.g. insecure context); fail silently.
       setCopied(false);
     }
   };
 
-  // Split content into lines so we can render a gutter with line numbers.
   const lines: string[] = activeTab.content.split('\n');
 
   const panelStyle: React.CSSProperties = {
@@ -277,23 +306,38 @@ const CodeExportPanel = (props: CodeExportPanelProps) => {
       <div className={styles.panelHeader}>
         <div className={styles.panelTitleGroup}>
           <FileCode2 size={16} />
-          <h3 className={styles.panelTitle}>{t('export.title')}</h3>
+          <div>
+            <h3 className={styles.panelTitle}>{t('export.title')}</h3>
+            <p className={styles.panelSubtitle}>{t('export.subtitle')}</p>
+          </div>
         </div>
-        <p className={styles.panelSubtitle}>{t('export.subtitle')}</p>
+
+        {/* Framework selector on the right */}
+        <label className={styles.techSelect}>
+          <span className={styles.techLabel}>{t('export.tech')}</span>
+          <select
+            value={tech}
+            onChange={(e): void => handleTechChange(e.target.value as ExportTech)}
+          >
+            {TECHS.map((opt) => (
+              <option key={opt.id} value={opt.id}>
+                {opt.label}
+              </option>
+            ))}
+          </select>
+        </label>
       </div>
 
       <div className={styles.editor}>
-        {/* VSCode-like tab bar listing each exportable file */}
+        {/* VSCode-like tab bar listing the files for the chosen framework */}
         <div className={styles.tabBar} role="tablist">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               type="button"
               role="tab"
-              aria-selected={tab.id === activeTabId}
-              className={classNames(styles.tab, {
-                [styles.activeTab]: tab.id === activeTabId,
-              })}
+              aria-selected={tab.id === activeTab.id}
+              className={classNames(styles.tab, { [styles.activeTab]: tab.id === activeTab.id })}
               onClick={(): void => {
                 setActiveTabId(tab.id);
                 setCopied(false);
@@ -316,11 +360,7 @@ const CodeExportPanel = (props: CodeExportPanelProps) => {
 
         {/* The file path breadcrumb, like an editor's status strip */}
         <div className={styles.pathBar}>
-          <span className={styles.pathSegment}>src</span>
-          <span className={styles.pathSep}>/</span>
-          <span className={styles.pathSegment}>styles</span>
-          <span className={styles.pathSep}>/</span>
-          <span className={styles.pathCurrent}>{activeTab.filename}</span>
+          <span className={styles.pathCurrent}>{activeTab.path ?? activeTab.filename}</span>
           <span className={styles.langBadge}>{activeTab.language}</span>
         </div>
 

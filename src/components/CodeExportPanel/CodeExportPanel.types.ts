@@ -13,4 +13,15 @@ export type ExportTab = {
   dotColor: string;
   // The full code content that gets copied to the clipboard.
   content: string;
+  // Where the file belongs in a project, shown in the breadcrumb strip.
+  path?: string;
 };
+
+// A target framework/technology the export can be tailored to.
+export type ExportTech =
+  | 'css'
+  | 'scss'
+  | 'tailwind'
+  | 'nextjs'
+  | 'nuxtjs'
+  | 'json';
