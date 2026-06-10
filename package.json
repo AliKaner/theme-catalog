@@ -37,7 +37,12 @@
   "files": [
     "dist"
   ],
-  "sideEffects": false,
+  "sideEffects": [
+    "**/*.css",
+    "**/*.scss",
+    "**/i18n/**",
+    "**/main.tsx"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
