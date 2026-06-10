@@ -20,6 +20,18 @@
     ".": {
       "types": "./dist/lib/index.d.ts",
       "import": "./dist/lib/index.js"
+    },
+    "./generate": {
+      "types": "./dist/lib/generate.d.ts",
+      "import": "./dist/lib/generate.js"
+    },
+    "./themes/ids": {
+      "types": "./dist/themes/ids.d.ts",
+      "import": "./dist/themes/ids.js"
+    },
+    "./themes/*": {
+      "types": "./dist/themes/*.d.ts",
+      "import": "./dist/themes/*.js"
     }
   },
   "files": [

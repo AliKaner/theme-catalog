@@ -64,6 +64,31 @@ const files = generateCustomThemeCode(
 );
 ```
 
+### Pull a single theme (tree-shakeable)
+
+Importing `getTheme`/`themes` from the main entry references the whole catalog.
+If you only need **one** theme and don't want the rest of the data in your
+bundle, import it directly from its subpath — only that theme ships:
+
+```ts
+import oceanBreeze from 'theme-catalog-kit/themes/ocean-breeze';
+import { generateThemeCode } from 'theme-catalog-kit/generate'; // generator only, no dataset
+
+const files = generateThemeCode(oceanBreeze, 'nextjs');
+```
+
+```ts
+// Just the list of available ids (no theme data pulled in):
+import ids from 'theme-catalog-kit/themes/ids';
+```
+
+| Subpath | Returns |
+| ------- | ------- |
+| `theme-catalog-kit/themes/<id>` | a single `ThemeConfig` (default export) |
+| `theme-catalog-kit/themes/ids` | `string[]` of all theme ids |
+| `theme-catalog-kit/generate` | `generateThemeCode` / `resolveVariant` only (no dataset) |
+| `theme-catalog-kit` | the full API (`themes`, `getTheme`, `createTheme`, …) |
+
 ### 3. Write the files (e.g. a small script / CLI)
 
 ```ts

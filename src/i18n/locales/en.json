@@ -24,5 +24,37 @@
     "copy": "Copy",
     "copied": "Copied!",
     "tech": "Framework"
+  },
+  "a11y": {
+    "prevTheme": "Previous Theme",
+    "nextTheme": "Next Theme",
+    "goToSlide": "Go to slide {{n}}"
+  },
+  "docs": {
+    "back": "Catalog",
+    "heroTitle": "Theme Catalog Kit",
+    "heroLead": "A dependency-free toolkit to pick a preset palette or craft a custom one, then generate ready-to-paste theme code for your framework — CSS variables, button styles, Tailwind config and more.",
+    "statPresets": "presets",
+    "statVariants": "surface variants",
+    "statFrameworks": "frameworks",
+    "install": "Install",
+    "usePreset": "Use a preset",
+    "usePresetDesc": "Every preset in this catalog is available from the package and ready to export.",
+    "customize": "Customize your own",
+    "customizeDesc": "Pass just a name and two base colors — the kit derives the light/dark shades, applies a default font, and tags the surface variant.",
+    "single": "Pull a single theme",
+    "singleDesc": "Need just one theme? Import it from its subpath so only that theme ships in your bundle — the rest of the catalog is never pulled in.",
+    "generate": "Generate for any framework",
+    "generateDesc": "returns the files you need with the right filename and project path for each target.",
+    "variantsTitle": "Surface variants",
+    "variantsDesc": "Each theme renders one of {{count}} preview surfaces; the generated button styles match it.",
+    "apiTitle": "API reference",
+    "apiThemes": "array of all preset themes",
+    "apiGetTheme": "find a preset by id",
+    "apiByVariant": "filter presets by surface",
+    "apiCreate": "build a full theme from a minimal custom config",
+    "apiGenerate": "get framework-ready files",
+    "apiGenerateCustom": "create + generate in one call",
+    "apiShades": "shade helpers"
   }
 }

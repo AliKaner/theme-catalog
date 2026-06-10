@@ -24,5 +24,37 @@
     "copy": "Kopyala",
     "copied": "Kopyalandı!",
     "tech": "Teknoloji"
+  },
+  "a11y": {
+    "prevTheme": "Önceki Tema",
+    "nextTheme": "Sonraki Tema",
+    "goToSlide": "{{n}}. slayta git"
+  },
+  "docs": {
+    "back": "Katalog",
+    "heroTitle": "Theme Catalog Kit",
+    "heroLead": "Hazır bir palet seç ya da kendi paletini oluştur; ardından framework'ün için kopyala-yapıştır temaya hazır kod üret — CSS değişkenleri, buton stilleri, Tailwind config ve daha fazlası. Bağımlılıksız bir araç seti.",
+    "statPresets": "hazır tema",
+    "statVariants": "yüzey tipi",
+    "statFrameworks": "framework",
+    "install": "Kurulum",
+    "usePreset": "Hazır tema kullan",
+    "usePresetDesc": "Bu katalogdaki her hazır tema pakette mevcut ve dışa aktarmaya hazır.",
+    "customize": "Kendi temanı özelleştir",
+    "customizeDesc": "Sadece bir isim ve iki temel renk ver — kit açık/koyu tonları türetir, varsayılan bir font uygular ve yüzey tipini etiketler.",
+    "single": "Tek bir tema çek",
+    "singleDesc": "Sadece bir temaya mı ihtiyacın var? Subpath'inden import et; böylece bundle'ına yalnızca o tema girer — katalogun geri kalanı hiç çekilmez.",
+    "generate": "Her framework için üret",
+    "generateDesc": "her hedef için doğru dosya adı ve proje yoluyla ihtiyacın olan dosyaları döndürür.",
+    "variantsTitle": "Yüzey tipleri",
+    "variantsDesc": "Her tema {{count}} önizleme yüzeyinden birini kullanır; üretilen buton stilleri buna uyar.",
+    "apiTitle": "API referansı",
+    "apiThemes": "tüm hazır temaların dizisi",
+    "apiGetTheme": "id ile hazır tema bul",
+    "apiByVariant": "hazır temaları yüzeye göre filtrele",
+    "apiCreate": "minimal bir custom config'den tam tema oluştur",
+    "apiGenerate": "framework'e hazır dosyaları al",
+    "apiGenerateCustom": "tek çağrıda oluştur + üret",
+    "apiShades": "ton yardımcıları"
   }
 }

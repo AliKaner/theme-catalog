@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { ArrowLeft, Boxes, Palette, Wand2, Code2, Package } from 'lucide-react';
 import { frameworks, themes, variants } from '../../lib';
 import styles from './DocsPage.module.scss';
@@ -44,15 +45,22 @@ for (const file of generateThemeCode(getTheme('cyberpunk-neon'), 'tailwind')) {
   writeFileSync(file.path, file.content);
 }`;
 
+const singleSnippet = `// Pulls ONLY this theme + the generator — not the whole catalog
+import oceanBreeze from '${PKG}/themes/ocean-breeze';
+import { generateThemeCode } from '${PKG}/generate';
+
+const files = generateThemeCode(oceanBreeze, 'nextjs');`;
+
 const DocsPage = (props: DocsPageProps) => {
   const { onBack } = props;
+  const { t } = useTranslation();
 
   return (
     <div className={styles.docs}>
       <header className={styles.header}>
         <button type="button" className={styles.backBtn} onClick={onBack}>
           <ArrowLeft size={16} />
-          <span>Catalog</span>
+          <span>{t('docs.back')}</span>
         </button>
         <div className={styles.pkgPill}>
           <Package size={14} />
@@ -62,34 +70,30 @@ const DocsPage = (props: DocsPageProps) => {
 
       <main className={styles.body}>
         <section className={styles.hero}>
-          <h1>Theme Catalog Kit</h1>
-          <p>
-            A dependency-free toolkit to <strong>pick a preset palette</strong> or{' '}
-            <strong>craft a custom one</strong>, then <strong>generate ready-to-paste theme code</strong>{' '}
-            for your framework — CSS variables, button styles, Tailwind config and more.
-          </p>
+          <h1>{t('docs.heroTitle')}</h1>
+          <p>{t('docs.heroLead')}</p>
           <div className={styles.statRow}>
             <div className={styles.stat}>
               <Palette size={18} />
               <span>{themes.length}</span>
-              <small>presets</small>
+              <small>{t('docs.statPresets')}</small>
             </div>
             <div className={styles.stat}>
               <Boxes size={18} />
               <span>{variants.length}</span>
-              <small>surface variants</small>
+              <small>{t('docs.statVariants')}</small>
             </div>
             <div className={styles.stat}>
               <Code2 size={18} />
               <span>{frameworks.length}</span>
-              <small>frameworks</small>
+              <small>{t('docs.statFrameworks')}</small>
             </div>
           </div>
         </section>
 
         <section className={styles.section}>
           <h2>
-            <Package size={18} /> Install
+            <Package size={18} /> {t('docs.install')}
           </h2>
           <pre className={styles.code}>
             <code>{installSnippet}</code>
@@ -98,9 +102,9 @@ const DocsPage = (props: DocsPageProps) => {
 
         <section className={styles.section}>
           <h2>
-            <Palette size={18} /> Use a preset
+            <Palette size={18} /> {t('docs.usePreset')}
           </h2>
-          <p>Every preset in this catalog is available from the package and ready to export.</p>
+          <p>{t('docs.usePresetDesc')}</p>
           <pre className={styles.code}>
             <code>{presetSnippet}</code>
           </pre>
@@ -108,12 +112,9 @@ const DocsPage = (props: DocsPageProps) => {
 
         <section className={styles.section}>
           <h2>
-            <Wand2 size={18} /> Customize your own
+            <Wand2 size={18} /> {t('docs.customize')}
           </h2>
-          <p>
-            Pass just a name and two base colors — the kit derives the light/dark shades, applies a
-            default font, and tags the surface variant.
-          </p>
+          <p>{t('docs.customizeDesc')}</p>
           <pre className={styles.code}>
             <code>{customSnippet}</code>
           </pre>
@@ -121,11 +122,20 @@ const DocsPage = (props: DocsPageProps) => {
 
         <section className={styles.section}>
           <h2>
-            <Code2 size={18} /> Generate for any framework
+            <Package size={18} /> {t('docs.single')}
+          </h2>
+          <p>{t('docs.singleDesc')}</p>
+          <pre className={styles.code}>
+            <code>{singleSnippet}</code>
+          </pre>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            <Code2 size={18} /> {t('docs.generate')}
           </h2>
           <p>
-            <code>generateThemeCode(theme, framework)</code> returns the files you need with the right
-            filename and project path for each target.
+            <code>generateThemeCode(theme, framework)</code> {t('docs.generateDesc')}
           </p>
           <div className={styles.tagRow}>
             {frameworks.map((f) => (
@@ -141,9 +151,9 @@ const DocsPage = (props: DocsPageProps) => {
 
         <section className={styles.section}>
           <h2>
-            <Boxes size={18} /> Surface variants
+            <Boxes size={18} /> {t('docs.variantsTitle')}
           </h2>
-          <p>Each theme renders one of {variants.length} preview surfaces; the generated button styles match it.</p>
+          <p>{t('docs.variantsDesc', { count: variants.length })}</p>
           <div className={styles.tagRow}>
             {variants.map((v) => (
               <span key={v} className={styles.tag}>
@@ -154,28 +164,28 @@ const DocsPage = (props: DocsPageProps) => {
         </section>
 
         <section className={styles.section}>
-          <h2>API reference</h2>
+          <h2>{t('docs.apiTitle')}</h2>
           <ul className={styles.api}>
             <li>
-              <code>themes</code> — array of all preset <code>ThemeConfig</code>s
+              <code>themes</code> — {t('docs.apiThemes')}
             </li>
             <li>
-              <code>getTheme(id)</code> — find a preset by id
+              <code>getTheme(id)</code> — {t('docs.apiGetTheme')}
             </li>
             <li>
-              <code>getThemesByVariant(variant)</code> — filter presets by surface
+              <code>getThemesByVariant(variant)</code> — {t('docs.apiByVariant')}
             </li>
             <li>
-              <code>createTheme(input)</code> — build a full theme from a minimal custom config
+              <code>createTheme(input)</code> — {t('docs.apiCreate')}
             </li>
             <li>
-              <code>generateThemeCode(theme, framework)</code> — get framework-ready files
+              <code>generateThemeCode(theme, framework)</code> — {t('docs.apiGenerate')}
             </li>
             <li>
-              <code>generateCustomThemeCode(input, framework)</code> — create + generate in one call
+              <code>generateCustomThemeCode(input, framework)</code> — {t('docs.apiGenerateCustom')}
             </li>
             <li>
-              <code>lighten(hex)</code> / <code>darken(hex)</code> — shade helpers
+              <code>lighten(hex)</code> / <code>darken(hex)</code> — {t('docs.apiShades')}
             </li>
           </ul>
         </section>

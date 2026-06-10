@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import classNames from 'classnames';
 import ThemeCard from '../ThemeCard';
@@ -19,7 +20,8 @@ const INDICATOR_CENTER: number = INDICATOR_VIEWPORT / 2 - INDICATOR_DOT / 2; // 
 
 const JukeboxCarousel = (props: JukeboxCarouselProps) => {
   const { themes, activeIndex, onChangeIndex, appliedThemeId, onApplyTheme } = props;
-  
+  const { t } = useTranslation();
+
   // Total count of themes
   const n: number = themes.length;
 
@@ -108,7 +110,7 @@ const JukeboxCarousel = (props: JukeboxCarouselProps) => {
         type="button"
         className={classNames(styles.navButton, styles.prev)}
         onClick={handlePrev}
-        aria-label="Previous Theme"
+        aria-label={t('a11y.prevTheme')}
       >
         <ChevronLeft size={24} />
       </button>
@@ -117,7 +119,7 @@ const JukeboxCarousel = (props: JukeboxCarouselProps) => {
         type="button"
         className={classNames(styles.navButton, styles.next)}
         onClick={handleNext}
-        aria-label="Next Theme"
+        aria-label={t('a11y.nextTheme')}
       >
         <ChevronRight size={24} />
       </button>
@@ -156,7 +158,7 @@ const JukeboxCarousel = (props: JukeboxCarouselProps) => {
                   [styles.activeDot]: index === activeIndex,
                 })}
                 onClick={(): void => onChangeIndex(index)}
-                aria-label={`Go to slide ${index + 1}`}
+                aria-label={t('a11y.goToSlide', { n: index + 1 })}
               />
             );
           })}
