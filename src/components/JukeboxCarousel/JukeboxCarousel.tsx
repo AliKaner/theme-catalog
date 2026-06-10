@@ -5,6 +5,18 @@ import ThemeCard from '../ThemeCard';
 import type { JukeboxCarouselProps } from './JukeboxCarousel.types';
 import styles from './JukeboxCarousel.module.scss';
 
+// Indicator window geometry. The viewport is sized to show a bounded set of
+// dots; the track slides by INDICATOR_STEP px per item to keep the active dot
+// centered. Keep these in sync with the SCSS dot size + gap.
+const INDICATOR_DOT: number = 8; // dot diameter (px)
+const INDICATOR_GAP: number = 8; // gap between dots (px)
+const INDICATOR_STEP: number = INDICATOR_DOT + INDICATOR_GAP; // 16px per dot
+const INDICATOR_WINDOW: number = 4; // dots shown on each side of the active dot
+// Viewport shows (2*window + 1) dots; keep in sync with SCSS .indicatorViewport.
+const INDICATOR_VIEWPORT: number = (2 * INDICATOR_WINDOW + 1) * INDICATOR_STEP; // 144px
+// Half the viewport minus half a dot, so the active dot lands dead center.
+const INDICATOR_CENTER: number = INDICATOR_VIEWPORT / 2 - INDICATOR_DOT / 2; // 68px
+
 const JukeboxCarousel = (props: JukeboxCarouselProps) => {
   const { themes, activeIndex, onChangeIndex, appliedThemeId, onApplyTheme } = props;
   
@@ -110,19 +122,45 @@ const JukeboxCarousel = (props: JukeboxCarouselProps) => {
         <ChevronRight size={24} />
       </button>
 
-      {/* Indicators Dots */}
-      <div className={styles.indicators}>
-        {themes.map((theme, index: number) => (
-          <button
-            key={theme.id}
-            type="button"
-            className={classNames(styles.indicatorDot, {
-              [styles.activeDot]: index === activeIndex,
-            })}
-            onClick={(): void => onChangeIndex(index)}
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
+      {/* Indicators Dots — a fixed-size sliding window so the dot count stays
+          bounded no matter how many themes there are. The track slides to keep
+          the active dot centered, and dots shrink toward the edges. */}
+      <div className={styles.indicatorViewport}>
+        <div
+          className={styles.indicatorTrack}
+          style={{ transform: `translateX(${INDICATOR_CENTER - activeIndex * INDICATOR_STEP}px)` }}
+        >
+          {themes.map((theme, index: number) => {
+            const distance: number = Math.abs(index - activeIndex);
+            // Scale dots down the further they are from the active one; dots
+            // beyond the window collapse to zero so only a handful are visible.
+            let scale: number = 1;
+            if (distance > INDICATOR_WINDOW) {
+              scale = 0;
+            } else if (distance === INDICATOR_WINDOW) {
+              scale = 0.35;
+            } else if (distance === INDICATOR_WINDOW - 1) {
+              scale = 0.6;
+            }
+
+            const dotStyle: React.CSSProperties = {
+              '--dot-scale': scale,
+            } as React.CSSProperties;
+
+            return (
+              <button
+                key={theme.id}
+                type="button"
+                style={dotStyle}
+                className={classNames(styles.indicatorDot, {
+                  [styles.activeDot]: index === activeIndex,
+                })}
+                onClick={(): void => onChangeIndex(index)}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );

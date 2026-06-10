@@ -140,35 +140,51 @@
   }
 }
 
-/* Indicators */
-.indicators {
-  display: flex;
-  gap: 8px;
+/* Indicators — bounded sliding window of dots */
+.indicatorViewport {
+  // (2 * window + 1) * step = 9 * 16px = 144px. Keep in sync with the TS const.
+  width: 144px;
   margin-top: 24px;
+  overflow: hidden;
   z-index: 200;
+  // Fade the dots out toward the edges of the window.
+  mask-image: linear-gradient(90deg, transparent 0%, #000 18%, #000 82%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 18%, #000 82%, transparent 100%);
 
   @include mobile {
     margin-top: 12px;
   }
 }
 
+.indicatorTrack {
+  display: flex;
+  gap: 8px;
+  width: max-content;
+  // Animate the slide as the active index changes.
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+}
+
 .indicatorDot {
   width: 8px;
   height: 8px;
+  flex-shrink: 0;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.18);
   border: none;
   cursor: pointer;
-  transition: $transition-fast;
+  // Scale set per-dot from JS so dots shrink toward the window edges.
+  transform: scale(var(--dot-scale, 1));
+  transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s ease;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.45);
   }
 
   &.activeDot {
     background-color: #ffffff;
-    width: 24px;
-    border-radius: 4px;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    // Override the per-dot scale so the active dot is always emphasized.
+    transform: scale(1.6);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
   }
 }
