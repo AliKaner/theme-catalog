@@ -2754,5 +2754,549 @@
     },
     "tagline": "Still Water, Deep North",
     "desc": "Muted fjord blue and pale mist for calm, Scandinavian-minimal and travel brands."
+  },
+  {
+    "id": "aurora-glass",
+    "name": "Aurora Glass",
+    "fontFamily": "'Sora', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#6c5ce7",
+      "primaryLight": "#9a8cf0",
+      "primaryDark": "#4a3db5",
+      "secondary": "#00cec9",
+      "secondaryLight": "#5fe0dc",
+      "secondaryDark": "#00a39f"
+    },
+    "tagline": "See Right Through It",
+    "desc": "Frosted violet and aqua glass for sleek, modern fintech and dashboard brands.",
+    "variant": "glass"
+  },
+  {
+    "id": "frosted-mint",
+    "name": "Frosted Mint",
+    "fontFamily": "'Manrope', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#2ec4b6",
+      "primaryLight": "#6fdacf",
+      "primaryDark": "#1f9085",
+      "secondary": "#3a86ff",
+      "secondaryLight": "#79abff",
+      "secondaryDark": "#2a64c0"
+    },
+    "tagline": "Cool Clarity",
+    "desc": "Translucent mint and blue glass for fresh, airy SaaS and product brands.",
+    "variant": "glass"
+  },
+  {
+    "id": "crystal-coral",
+    "name": "Crystal Coral",
+    "fontFamily": "'Epilogue', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#ff6b81",
+      "primaryLight": "#ff9aaa",
+      "primaryDark": "#cc4f62",
+      "secondary": "#ffa45b",
+      "secondaryLight": "#ffc391",
+      "secondaryDark": "#cc7d3c"
+    },
+    "tagline": "Soft, Bright, Layered",
+    "desc": "Coral and peach behind frosted glass for warm, friendly lifestyle brands.",
+    "variant": "glass"
+  },
+  {
+    "id": "smoked-glass",
+    "name": "Smoked Glass",
+    "fontFamily": "'Space Grotesk', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#8d9db6",
+      "primaryLight": "#b3bece",
+      "primaryDark": "#5f6e85",
+      "secondary": "#5c5470",
+      "secondaryLight": "#867d9c",
+      "secondaryDark": "#3c3650"
+    },
+    "tagline": "Quiet, Tinted, Refined",
+    "desc": "Muted slate behind smoked glass for understated, premium corporate brands.",
+    "variant": "glass"
+  },
+  {
+    "id": "soft-clay",
+    "name": "Soft Clay",
+    "fontFamily": "'Manrope', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#ef8354",
+      "primaryLight": "#f4a787",
+      "primaryDark": "#bd5f37",
+      "secondary": "#4f5d75",
+      "secondaryLight": "#7d8aa0",
+      "secondaryDark": "#323c4c"
+    },
+    "tagline": "Pressed, Soft, Tactile",
+    "desc": "Warm clay accents on a soft neumorphic surface for gentle, modern app brands.",
+    "variant": "neu"
+  },
+  {
+    "id": "cloud-ui",
+    "name": "Cloud UI",
+    "fontFamily": "'Sora', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#4361ee",
+      "primaryLight": "#7b91f3",
+      "primaryDark": "#2c44b0",
+      "secondary": "#4cc9f0",
+      "secondaryLight": "#86ddf5",
+      "secondaryDark": "#2e9bbd"
+    },
+    "tagline": "Soft Edges, Clear Signals",
+    "desc": "Cloud-soft raised UI with blue accents for friendly dashboards and tools.",
+    "variant": "neu"
+  },
+  {
+    "id": "pebble",
+    "name": "Pebble",
+    "fontFamily": "'Work Sans', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#6b8f71",
+      "primaryLight": "#97b39c",
+      "primaryDark": "#476150",
+      "secondary": "#aab7b8",
+      "secondaryLight": "#cbd4d4",
+      "secondaryDark": "#7d8a8a"
+    },
+    "tagline": "Smooth And Grounded",
+    "desc": "Soft sage and stone on a pillowy surface for calm, wellness-minded app brands.",
+    "variant": "neu"
+  },
+  {
+    "id": "putty",
+    "name": "Putty",
+    "fontFamily": "'Epilogue', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#b5838d",
+      "primaryLight": "#cda6ae",
+      "primaryDark": "#8a5f68",
+      "secondary": "#6d6875",
+      "secondaryLight": "#979199",
+      "secondaryDark": "#48444f"
+    },
+    "tagline": "Soft Mauve, Soft Touch",
+    "desc": "Muted mauve on a moldable neumorphic surface for gentle beauty and care brands.",
+    "variant": "neu"
+  },
+  {
+    "id": "wire-blue",
+    "name": "Wire Blue",
+    "fontFamily": "'IBM Plex Mono', monospace",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#4dabf7",
+      "primaryLight": "#84c5fa",
+      "primaryDark": "#2c80c4",
+      "secondary": "#1c2333",
+      "secondaryLight": "#41506e",
+      "secondaryDark": "#0e1320"
+    },
+    "tagline": "Just The Skeleton",
+    "desc": "Dashed blue wireframe lines for lo-fi, prototyping and developer-tool brands.",
+    "variant": "outline"
+  },
+  {
+    "id": "sketchbook",
+    "name": "Sketchbook",
+    "fontFamily": "'Space Mono', monospace",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap",
+    "colors": {
+      "primary": "#e76f51",
+      "primaryLight": "#ef9a85",
+      "primaryDark": "#b54f34",
+      "secondary": "#2a2a2a",
+      "secondaryLight": "#555555",
+      "secondaryDark": "#141414"
+    },
+    "tagline": "Drawn, Not Designed",
+    "desc": "Hand-drawn outline style with orange ink for playful, indie and creative brands.",
+    "variant": "outline"
+  },
+  {
+    "id": "draft-mode",
+    "name": "Draft Mode",
+    "fontFamily": "'JetBrains Mono', monospace",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#a3e635",
+      "primaryLight": "#c2ee78",
+      "primaryDark": "#79ad22",
+      "secondary": "#18181b",
+      "secondaryLight": "#444448",
+      "secondaryDark": "#0a0a0c"
+    },
+    "tagline": "Work In Progress",
+    "desc": "Lime wireframe strokes on dark for raw, technical and unfinished-by-design brands.",
+    "variant": "outline"
+  },
+  {
+    "id": "outline-coral",
+    "name": "Outline Coral",
+    "fontFamily": "'Chivo Mono', monospace",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#ff7a8a",
+      "primaryLight": "#ffa6b1",
+      "primaryDark": "#cc5a68",
+      "secondary": "#10131c",
+      "secondaryLight": "#3a4050",
+      "secondaryDark": "#080a10"
+    },
+    "tagline": "Lines Only, No Fill",
+    "desc": "Coral dashed outlines on near-black for minimal, schematic creative brands.",
+    "variant": "outline"
+  },
+  {
+    "id": "gradient-mesh",
+    "name": "Gradient Mesh",
+    "fontFamily": "'Outfit', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#7f5af0",
+      "primaryLight": "#a487f5",
+      "primaryDark": "#5a3cc4",
+      "secondary": "#2cb67d",
+      "secondaryLight": "#6dd0a6",
+      "secondaryDark": "#1e8559"
+    },
+    "tagline": "Blended Without Borders",
+    "desc": "Vivid violet and green mesh for bold, modern startup and creative brands.",
+    "variant": "mesh"
+  },
+  {
+    "id": "aurora-mesh",
+    "name": "Aurora Mesh",
+    "fontFamily": "'Space Grotesk', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#43e97b",
+      "primaryLight": "#80f0a6",
+      "primaryDark": "#2eb35c",
+      "secondary": "#38f9d7",
+      "secondaryLight": "#7ffbe5",
+      "secondaryDark": "#1fc0a6"
+    },
+    "tagline": "Lights Across The Sky",
+    "desc": "Flowing green and teal mesh for fresh, energetic tech and wellness brands.",
+    "variant": "mesh"
+  },
+  {
+    "id": "sunset-mesh",
+    "name": "Sunset Mesh",
+    "fontFamily": "'Sora', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#ff9a3c",
+      "primaryLight": "#ffba74",
+      "primaryDark": "#cc7421",
+      "secondary": "#ff3c7c",
+      "secondaryLight": "#ff79a4",
+      "secondaryDark": "#cc2c5f"
+    },
+    "tagline": "Blurred Warm Horizons",
+    "desc": "Orange and pink mesh gradient for warm, vibrant lifestyle and music brands.",
+    "variant": "mesh"
+  },
+  {
+    "id": "ocean-mesh",
+    "name": "Ocean Mesh",
+    "fontFamily": "'Manrope', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#2193b0",
+      "primaryLight": "#5cb6cb",
+      "primaryDark": "#166c84",
+      "secondary": "#6dd5ed",
+      "secondaryLight": "#9fe5f2",
+      "secondaryDark": "#41a6bd"
+    },
+    "tagline": "Deep Currents, Soft Blend",
+    "desc": "Cool ocean blue mesh for calm, modern travel, water and tech brands.",
+    "variant": "mesh"
+  },
+  {
+    "id": "graph-paper",
+    "name": "Graph Paper",
+    "fontFamily": "'IBM Plex Mono', monospace",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#2dd4bf",
+      "primaryLight": "#6ee0d2",
+      "primaryDark": "#1f9d8f",
+      "secondary": "#0f2a2a",
+      "secondaryLight": "#3a5a5a",
+      "secondaryDark": "#071616"
+    },
+    "tagline": "Plotted To The Pixel",
+    "desc": "Teal grid lines on dark for data, analytics and engineering dashboard brands.",
+    "variant": "grid"
+  },
+  {
+    "id": "blueprint-grid",
+    "name": "Blueprint Grid",
+    "fontFamily": "'Space Mono', monospace",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap",
+    "colors": {
+      "primary": "#5b8def",
+      "primaryLight": "#8aabf3",
+      "primaryDark": "#3a63bd",
+      "secondary": "#0a1f44",
+      "secondaryLight": "#34507e",
+      "secondaryDark": "#04102a"
+    },
+    "tagline": "Measure Twice",
+    "desc": "Classic blueprint grid for architecture, engineering and construction brands.",
+    "variant": "grid"
+  },
+  {
+    "id": "engineer",
+    "name": "Engineer",
+    "fontFamily": "'Chivo Mono', monospace",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#f59e0b",
+      "primaryLight": "#f8b948",
+      "primaryDark": "#bd7806",
+      "secondary": "#1c1917",
+      "secondaryLight": "#46403c",
+      "secondaryDark": "#0c0a09"
+    },
+    "tagline": "Built On A Grid",
+    "desc": "Amber rule lines on dark for precise, technical and industrial tooling brands.",
+    "variant": "grid"
+  },
+  {
+    "id": "dot-matrix",
+    "name": "Dot Matrix",
+    "fontFamily": "'JetBrains Mono', monospace",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;1,400&display=swap",
+    "colors": {
+      "primary": "#a78bfa",
+      "primaryLight": "#c4b0fc",
+      "primaryDark": "#7c5fcc",
+      "secondary": "#161226",
+      "secondaryLight": "#403a55",
+      "secondaryDark": "#0b0815"
+    },
+    "tagline": "Printed In Lines",
+    "desc": "Violet grid lines on deep indigo for retro-tech and data-driven brand looks.",
+    "variant": "grid"
+  },
+  {
+    "id": "duotone-pop",
+    "name": "Duotone Pop",
+    "fontFamily": "'Archivo Black', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap",
+    "colors": {
+      "primary": "#ff006e",
+      "primaryLight": "#ff5ca0",
+      "primaryDark": "#c40056",
+      "secondary": "#3a0ca3",
+      "secondaryLight": "#6a45c4",
+      "secondaryDark": "#260778"
+    },
+    "tagline": "Two Tones, One Punch",
+    "desc": "Hard pink and indigo split for bold, graphic poster and music brands.",
+    "variant": "duotone"
+  },
+  {
+    "id": "split-citrus",
+    "name": "Split Citrus",
+    "fontFamily": "'Unbounded', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&display=swap",
+    "colors": {
+      "primary": "#ffbe0b",
+      "primaryLight": "#ffd34f",
+      "primaryDark": "#cc9700",
+      "secondary": "#fb5607",
+      "secondaryLight": "#fd8444",
+      "secondaryDark": "#c44305"
+    },
+    "tagline": "Sharp Edge Of Summer",
+    "desc": "Hard yellow and orange split for high-energy, youthful and sporty brands.",
+    "variant": "duotone"
+  },
+  {
+    "id": "magenta-split",
+    "name": "Magenta Split",
+    "fontFamily": "'Syne', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&display=swap",
+    "colors": {
+      "primary": "#f72585",
+      "primaryLight": "#fa64a6",
+      "primaryDark": "#c41a67",
+      "secondary": "#7209b7",
+      "secondaryLight": "#9a44d0",
+      "secondaryDark": "#520784"
+    },
+    "tagline": "Divided And Bold",
+    "desc": "Hard magenta and purple split for striking, creative and fashion brand looks.",
+    "variant": "duotone"
+  },
+  {
+    "id": "teal-split",
+    "name": "Teal Split",
+    "fontFamily": "'Bungee', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Bungee&display=swap",
+    "colors": {
+      "primary": "#06d6a0",
+      "primaryLight": "#54e3bf",
+      "primaryDark": "#04a078",
+      "secondary": "#073b4c",
+      "secondaryLight": "#356070",
+      "secondaryDark": "#04222c"
+    },
+    "tagline": "Clean Cut Contrast",
+    "desc": "Hard teal and deep petrol split for fresh, confident and modern brands.",
+    "variant": "duotone"
+  },
+  {
+    "id": "crt-amber",
+    "name": "CRT Amber",
+    "fontFamily": "'VT323', monospace",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=VT323&display=swap",
+    "colors": {
+      "primary": "#ffb000",
+      "primaryLight": "#ffc94d",
+      "primaryDark": "#c48600",
+      "secondary": "#1a0f00",
+      "secondaryLight": "#4a3415",
+      "secondaryDark": "#0a0600"
+    },
+    "tagline": "BOOTING SYSTEM...",
+    "desc": "Amber phosphor scanlines for retro terminal, sci-fi and hacker brand looks.",
+    "variant": "scanline"
+  },
+  {
+    "id": "retro-scan",
+    "name": "Retro Scan",
+    "fontFamily": "'Silkscreen', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap",
+    "colors": {
+      "primary": "#39ff14",
+      "primaryLight": "#84ff6b",
+      "primaryDark": "#27b80e",
+      "secondary": "#001100",
+      "secondaryLight": "#0a3a0a",
+      "secondaryDark": "#000800"
+    },
+    "tagline": "SIGNAL LOCKED",
+    "desc": "Green CRT scanlines for nostalgic gaming, arcade and tech-retro brands.",
+    "variant": "scanline"
+  },
+  {
+    "id": "vhs-night",
+    "name": "VHS Night",
+    "fontFamily": "'Monoton', cursive",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Monoton&display=swap",
+    "colors": {
+      "primary": "#ff2e97",
+      "primaryLight": "#ff6fb8",
+      "primaryDark": "#c41f73",
+      "secondary": "#1a0033",
+      "secondaryLight": "#43155e",
+      "secondaryDark": "#0c0019"
+    },
+    "tagline": "PLEASE BE KIND, REWIND",
+    "desc": "Pink scanlines over deep purple for retro VHS, synthwave and nightlife brands.",
+    "variant": "scanline"
+  },
+  {
+    "id": "phosphor",
+    "name": "Phosphor",
+    "fontFamily": "'Major Mono Display', monospace",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap",
+    "colors": {
+      "primary": "#00e5ff",
+      "primaryLight": "#5cefff",
+      "primaryDark": "#00adc4",
+      "secondary": "#001417",
+      "secondaryLight": "#0a3a40",
+      "secondaryDark": "#000a0c"
+    },
+    "tagline": "glowing in the dark",
+    "desc": "Cyan phosphor scanlines for futuristic, terminal and cyberpunk brand worlds.",
+    "variant": "scanline"
+  },
+  {
+    "id": "stage-light",
+    "name": "Stage Light",
+    "fontFamily": "'Playfair Display', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap",
+    "colors": {
+      "primary": "#ffd166",
+      "primaryLight": "#ffe09c",
+      "primaryDark": "#cca238",
+      "secondary": "#1b1b2f",
+      "secondaryLight": "#45455f",
+      "secondaryDark": "#0d0d1a"
+    },
+    "tagline": "All Eyes On You",
+    "desc": "A warm golden spotlight on dark for theatrical, premium event and luxury brands.",
+    "variant": "spotlight"
+  },
+  {
+    "id": "spotlight-rose",
+    "name": "Spotlight Rose",
+    "fontFamily": "'DM Serif Display', serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap",
+    "colors": {
+      "primary": "#ff5d8f",
+      "primaryLight": "#ff8fb1",
+      "primaryDark": "#cc4a72",
+      "secondary": "#1a0f1a",
+      "secondaryLight": "#433043",
+      "secondaryDark": "#0d070d"
+    },
+    "tagline": "Center Of Attention",
+    "desc": "A soft rose spotlight on dark for romantic, beauty and boutique brand looks.",
+    "variant": "spotlight"
+  },
+  {
+    "id": "focus-blue",
+    "name": "Focus Blue",
+    "fontFamily": "'Sora', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#4da8ff",
+      "primaryLight": "#86c4ff",
+      "primaryDark": "#2c7ec4",
+      "secondary": "#0a1626",
+      "secondaryLight": "#33445c",
+      "secondaryDark": "#040b14"
+    },
+    "tagline": "Eyes On The Signal",
+    "desc": "A cool blue spotlight on deep navy for focused, modern SaaS and tech brands.",
+    "variant": "spotlight"
+  },
+  {
+    "id": "beacon",
+    "name": "Beacon",
+    "fontFamily": "'Space Grotesk', sans-serif",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap",
+    "colors": {
+      "primary": "#2cff9a",
+      "primaryLight": "#7affc1",
+      "primaryDark": "#1bc475",
+      "secondary": "#06121a",
+      "secondaryLight": "#2c4450",
+      "secondaryDark": "#02080c"
+    },
+    "tagline": "A Light In The Dark",
+    "desc": "A bright green beacon glow on dark for bold, guiding and futuristic tech brands.",
+    "variant": "spotlight"
   }
 ]

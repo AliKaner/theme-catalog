@@ -69,6 +69,8 @@ const ThemeCard = (props: ThemeCardProps) => {
 
       {/* Mock Website Preview Area */}
       <div className={classNames(styles.previewContainer, styles[`v_${variant}`])}>
+        {/* Surface-style badge so the theme's type is visible at a glance */}
+        <span className={styles.variantBadge}>{variant}</span>
         {/* Mock Navigation Bar */}
         <header className={styles.mockHeader}>
           <div className={styles.mockLogo} style={{ fontFamily: theme.fontFamily }}>

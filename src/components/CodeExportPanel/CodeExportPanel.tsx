@@ -3,8 +3,144 @@ import { useTranslation } from 'react-i18next';
 import { Check, Copy, FileCode2 } from 'lucide-react';
 import classNames from 'classnames';
 import type { CodeExportPanelProps, ExportTab } from './CodeExportPanel.types';
-import type { ThemeConfig } from '../../pages/ThemeCatalog/ThemeCatalog.types';
+import type { ThemeConfig, ThemeVariant } from '../../pages/ThemeCatalog/ThemeCatalog.types';
 import styles from './CodeExportPanel.module.scss';
+
+// Generate ready-to-use button CSS whose borders, corners and edges match the
+// theme's surface variant, so users can copy the exact button look they see.
+const buildButtonCss = (theme: ThemeConfig, variant: ThemeVariant): string => {
+  const c = theme.colors;
+  const base = `.btn {
+  font-family: ${theme.fontFamily};
+  font-weight: 600;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn:active { transform: translateY(1px); }`;
+
+  switch (variant) {
+    case 'flat':
+      return `/* ${theme.name} — brutalist / hard-edge buttons */
+${base}
+
+.btn-primary {
+  background: ${c.primary};
+  color: ${c.secondaryLight};
+  border: 2px solid #14151b;       /* hard edge */
+  border-radius: 0;                /* sharp corners */
+  box-shadow: 4px 4px 0 ${c.primaryDark};  /* offset block shadow */
+}
+.btn-primary:hover { box-shadow: 6px 6px 0 ${c.primaryDark}; }
+
+.btn-outline {
+  background: transparent;
+  color: ${c.primaryDark};
+  border: 2px solid ${c.primaryDark};
+  border-radius: 0;
+}`;
+    case 'neu':
+      return `/* ${theme.name} — soft neumorphic buttons */
+${base}
+
+.btn-primary {
+  background: #e2e5ec;
+  color: ${c.primaryDark};
+  border: none;
+  border-radius: 14px;             /* soft rounded corners */
+  box-shadow: 6px 6px 12px #b9bdc6, -6px -6px 12px #ffffff;
+}
+.btn-primary:hover { box-shadow: 8px 8px 16px #b9bdc6, -8px -8px 16px #ffffff; }
+
+.btn-outline {
+  background: #e2e5ec;
+  color: ${c.primary};
+  border: none;
+  border-radius: 14px;
+  box-shadow: inset 3px 3px 7px #b9bdc6, inset -3px -3px 7px #ffffff;
+}`;
+    case 'glass':
+      return `/* ${theme.name} — frosted glass buttons */
+${base}
+
+.btn-primary {
+  background: color-mix(in srgb, ${c.primary} 32%, transparent);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.28);  /* light glass edge */
+  border-radius: 12px;             /* rounded corners */
+  backdrop-filter: blur(8px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.btn-outline {
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  border: 1px solid color-mix(in srgb, ${c.secondary} 55%, transparent);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+}`;
+    case 'outline':
+      return `/* ${theme.name} — wireframe / outline buttons */
+${base}
+
+.btn-primary {
+  background: transparent;
+  color: ${c.primaryLight};
+  border: 1px dashed ${c.primary};  /* dashed edge */
+  border-radius: 8px;              /* gently rounded corners */
+}
+.btn-primary:hover { border-style: solid; }
+
+.btn-outline {
+  background: transparent;
+  color: ${c.primaryLight};
+  border: 1px solid color-mix(in srgb, ${c.primary} 50%, transparent);
+  border-radius: 8px;
+}`;
+    case 'duotone':
+      return `/* ${theme.name} — bold duotone buttons */
+${base}
+
+.btn-primary {
+  background: ${c.primary};
+  color: #ffffff;
+  border: 2px solid ${c.secondary};  /* contrasting edge */
+  border-radius: 4px;              /* slightly sharp corners */
+}
+
+.btn-outline {
+  background: ${c.secondary};
+  color: #ffffff;
+  border: 2px solid ${c.primary};
+  border-radius: 4px;
+}`;
+    default:
+      // gradient, mesh, grid, scanline, spotlight — gradient-border pill buttons
+      return `/* ${theme.name} — gradient-border buttons */
+${base}
+
+.btn-primary {
+  color: #ffffff;
+  border: 1px solid transparent;   /* gradient border via background-clip */
+  border-radius: 8px;              /* rounded corners */
+  background:
+    linear-gradient(#11131a, #11131a) padding-box,
+    linear-gradient(to right, ${c.primary}, ${c.secondary}) border-box;
+}
+.btn-primary:hover {
+  background:
+    linear-gradient(#181a23, #181a23) padding-box,
+    linear-gradient(to right, ${c.primaryLight}, ${c.secondaryLight}) border-box;
+}
+
+.btn-outline {
+  background: transparent;
+  color: ${c.primaryLight};
+  border: 1px solid color-mix(in srgb, ${c.primary} 40%, transparent);
+  border-radius: 8px;
+}`;
+  }
+};
 
 // Build the list of exportable files for the currently applied theme. Each entry
 // becomes one editor tab the user can read and copy, similar to switching files
@@ -61,6 +197,10 @@ module.exports = {
 
   const json = JSON.stringify(theme, null, 2);
 
+  // Resolve the surface variant so the button styles match what's on screen.
+  const variant: ThemeVariant = theme.variant ?? (theme.flat ? 'flat' : 'gradient');
+  const buttons = buildButtonCss(theme, variant);
+
   return [
     {
       id: 'css',
@@ -68,6 +208,13 @@ module.exports = {
       language: 'css',
       dotColor: '#519aba',
       content: `${fontImport}\n\n${cssVars}`,
+    },
+    {
+      id: 'buttons',
+      filename: 'buttons.css',
+      language: 'css',
+      dotColor: '#e8920c',
+      content: buttons,
     },
     {
       id: 'scss',
