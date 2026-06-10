@@ -10,10 +10,16 @@
     radial-gradient(circle at 15% -5%, color-mix(in srgb, var(--app-primary) 22%, transparent) 0%, transparent 45%),
     radial-gradient(circle at 90% 110%, color-mix(in srgb, var(--app-secondary) 20%, transparent) 0%, transparent 45%);
   color: $text-primary;
+  // Adopt the applied theme's typeface across the whole page.
+  font-family: var(--app-font-family), 'Inter', sans-serif;
   position: relative;
   overflow: hidden;
   padding-bottom: 90px; // account for floating banner
   transition: $transition-slow;
+  // A clear top accent bar in the applied theme's gradient, so applying a
+  // theme visibly restyles the whole page.
+  border-top: 4px solid transparent;
+  border-image: linear-gradient(to right, var(--app-primary), var(--app-secondary)) 1;
 
   // Dynamic subtle background glow based on selected theme
   &::before {
@@ -42,7 +48,7 @@
   align-items: center;
   padding: 16px 40px;
   background-color: rgba(15, 16, 21, 0.8);
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid color-mix(in srgb, var(--app-primary) 35%, #{$border-color});
   position: sticky;
   top: 0;
   z-index: $z-header;
@@ -139,6 +145,28 @@
   @include mobile {
     padding: 6px 12px;
     font-size: 11px;
+  }
+}
+
+/* Docs link button */
+.docsBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--app-primary) 30%, rgba(255, 255, 255, 0.08));
+  color: $text-secondary;
+  padding: 8px 14px;
+  border-radius: $radius-md;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: $transition-fast;
+
+  &:hover {
+    color: $text-primary;
+    border-color: var(--app-primary);
+    background-color: rgba(255, 255, 255, 0.03);
   }
 }
 
@@ -324,11 +352,10 @@
 
 .themeGrid {
   display: grid;
-  // No gap: cards overlap each other and fan open on hover.
   grid-template-columns: repeat(3, 1fr);
-  gap: 0;
+  gap: 28px;
   margin-top: 16px;
-  padding: 24px 28px;
+  padding: 8px;
 
   @include tablet {
     grid-template-columns: repeat(2, 1fr);
@@ -337,7 +364,12 @@
   @include mobile {
     grid-template-columns: 1fr;
     gap: 20px;
-    padding: 0;
+  }
+
+  // When a card is hovered, gently recede the rest so focus lands on one card.
+  &:hover .gridItem:not(:hover) {
+    opacity: 0.55;
+    transform: scale(0.97);
   }
 }
 
@@ -345,49 +377,18 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
-  // Default: slightly shrunk and overlapping its neighbors.
-  transform: scale(0.9);
-  margin-top: -8px;
-  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), filter 0.45s ease;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease;
   will-change: transform;
 
-  // Pull each non-first column to overlap the previous card.
-  &:not(:nth-child(3n + 1)) {
-    margin-left: -38px;
-  }
-
-  // The hovered card opens up, lifts above the rest, and is fully revealed.
+  // The hovered card lifts cleanly above the rest.
   &:hover {
-    transform: scale(1.14);
-    z-index: 50;
-    filter: drop-shadow(0 24px 55px rgba(0, 0, 0, 0.6));
+    transform: translateY(-10px) scale(1.04);
+    z-index: 10;
   }
 
-  // Push the immediate horizontal neighbours aside so the open card has room.
-  &:hover + .gridItem {
-    transform: scale(0.9) translateX(46px);
-  }
-
-  &:has(+ .gridItem:hover) {
-    transform: scale(0.9) translateX(-46px);
-  }
-
-  // On small screens fall back to a plain, non-overlapping stack.
   @include mobile {
-    transform: none;
-    margin-top: 0;
-
-    &:not(:nth-child(3n + 1)) {
-      margin-left: 0;
-    }
-
     &:hover {
-      transform: scale(1.02);
-    }
-
-    &:hover + .gridItem,
-    &:has(+ .gridItem:hover) {
-      transform: none;
+      transform: translateY(-4px) scale(1.01);
     }
   }
 }
@@ -400,12 +401,15 @@
   transform: translateX(-50%);
   width: calc(100% - 80px);
   max-width: $container-max-width;
-  background-color: rgba(24, 25, 32, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  // Tinted by the applied theme so the active selection is obvious.
+  background-image:
+    linear-gradient(rgba(24, 25, 32, 0.9), rgba(24, 25, 32, 0.9)),
+    linear-gradient(120deg, var(--app-primary), var(--app-secondary));
+  border: 1px solid color-mix(in srgb, var(--app-primary) 45%, transparent);
   border-radius: $radius-lg;
   padding: 16px 32px;
   backdrop-filter: blur(16px);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 24px color-mix(in srgb, var(--app-primary) 18%, transparent);
   z-index: $z-overlay;
   transition: $transition-slow;
 

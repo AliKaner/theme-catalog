@@ -16,12 +16,3 @@ export type ExportTab = {
   // Where the file belongs in a project, shown in the breadcrumb strip.
   path?: string;
 };
-
-// A target framework/technology the export can be tailored to.
-export type ExportTech =
-  | 'css'
-  | 'scss'
-  | 'tailwind'
-  | 'nextjs'
-  | 'nuxtjs'
-  | 'json';

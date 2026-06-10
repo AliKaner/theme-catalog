@@ -15,7 +15,8 @@
     "dark": "Dark",
     "font": "Typography",
     "activeTheme": "Active Theme",
-    "previewTitle": "Mini Website Preview"
+    "previewTitle": "Mini Website Preview",
+    "docs": "Docs"
   },
   "export": {
     "title": "Copy To Your Project",

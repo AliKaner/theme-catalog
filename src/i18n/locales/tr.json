@@ -15,7 +15,8 @@
     "dark": "Koyu",
     "font": "Tipografi",
     "activeTheme": "Aktif Tema",
-    "previewTitle": "Mini Web Sitesi Önizlemesi"
+    "previewTitle": "Mini Web Sitesi Önizlemesi",
+    "docs": "Döküman"
   },
   "export": {
     "title": "Projene Kopyala",

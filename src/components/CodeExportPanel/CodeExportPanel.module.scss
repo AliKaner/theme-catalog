@@ -219,11 +219,13 @@
   background-color: color-mix(in srgb, var(--theme-primary) 14%, transparent);
 }
 
-/* Code body */
+/* Code body — only the body scrolls vertically; horizontal scroll lives on the
+   code column alone, so there is a single scrollbar in each direction. */
 .codeBody {
   display: flex;
   max-height: 320px;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
   font-size: 12.5px;
   line-height: 1.7;

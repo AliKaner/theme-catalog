@@ -1,0 +1,240 @@
+@use '../../styles/variables' as *;
+
+.docs {
+  min-height: 100vh;
+  background-color: $bg-dark;
+  background-image:
+    radial-gradient(circle at 12% -5%, rgba(99, 102, 241, 0.12) 0%, transparent 42%),
+    radial-gradient(circle at 92% 108%, rgba(34, 211, 238, 0.1) 0%, transparent 42%);
+  color: $text-primary;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  border-bottom: 1px solid $border-color;
+  position: sticky;
+  top: 0;
+  background-color: rgba(15, 16, 21, 0.82);
+  backdrop-filter: blur(12px);
+  z-index: $z-header;
+
+  @include mobile {
+    padding: 12px 20px;
+  }
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: $text-secondary;
+  padding: 8px 14px;
+  border-radius: $radius-md;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: $transition-fast;
+
+  &:hover {
+    color: $text-primary;
+    border-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.03);
+  }
+}
+
+.pkgPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 12px;
+  color: $text-secondary;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.body {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 48px 40px 100px;
+
+  @include mobile {
+    padding: 28px 20px 80px;
+  }
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 48px;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #ffffff 40%, #8b8cf0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    font-size: 15px;
+    color: $text-secondary;
+    line-height: 1.7;
+    max-width: 620px;
+    margin: 0 auto;
+
+    strong {
+      color: $text-primary;
+      font-weight: 600;
+    }
+  }
+}
+
+.statRow {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 110px;
+  padding: 16px 20px;
+  border-radius: $radius-md;
+  background-color: $bg-card;
+  border: 1px solid $border-color;
+
+  svg {
+    color: #8b8cf0;
+    margin-bottom: 4px;
+  }
+
+  span {
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  small {
+    font-size: 11px;
+    color: $text-muted;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+}
+
+.section {
+  margin-bottom: 40px;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 12px;
+
+    svg {
+      color: #8b8cf0;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    color: $text-secondary;
+    line-height: 1.7;
+    margin-bottom: 14px;
+  }
+
+  code {
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 12.5px;
+    color: #c9b6ff;
+    background-color: rgba(139, 140, 240, 0.12);
+    padding: 1px 6px;
+    border-radius: 5px;
+  }
+}
+
+.code {
+  margin: 0;
+  padding: 18px 20px;
+  border-radius: $radius-md;
+  background-color: #11131a;
+  border: 1px solid $border-color;
+  overflow-x: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+  code {
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 12.5px;
+    line-height: 1.7;
+    color: #d7dae0;
+    background: none;
+    padding: 0;
+    white-space: pre;
+  }
+}
+
+.tagRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tag {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: $text-secondary;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.api {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  li {
+    font-size: 14px;
+    color: $text-secondary;
+    line-height: 1.5;
+    padding-left: 16px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: #8b8cf0;
+    }
+  }
+}

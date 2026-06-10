@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { LayoutGrid, Disc } from 'lucide-react';
+import { LayoutGrid, Disc, BookOpen } from 'lucide-react';
 import classNames from 'classnames';
 import JukeboxCarousel from '../../components/JukeboxCarousel';
 import ThemeCard from '../../components/ThemeCard';
@@ -10,10 +10,12 @@ import type { ThemeConfig, ViewMode } from './ThemeCatalog.types';
 import styles from './ThemeCatalog.module.scss';
 
 type ThemeCatalogProps = {
-  // Page props are empty for root level routing context
+  // Opens the documentation page from the navbar.
+  onOpenDocs?: () => void;
 };
 
-const ThemeCatalog = (_props: ThemeCatalogProps) => {
+const ThemeCatalog = (props: ThemeCatalogProps) => {
+  const { onOpenDocs } = props;
   // Explicitly type the loaded theme array
   const themes: ThemeConfig[] = themesData as ThemeConfig[];
 
@@ -84,7 +86,11 @@ const ThemeCatalog = (_props: ThemeCatalogProps) => {
             </button>
           </div>
 
-          {/* Language selection removed as per user request */}
+          {/* Documentation link */}
+          <button type="button" className={styles.docsBtn} onClick={onOpenDocs}>
+            <BookOpen size={16} />
+            <span>{t('catalog.docs')}</span>
+          </button>
         </div>
       </header>
 

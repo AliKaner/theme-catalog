@@ -1,11 +1,36 @@
 {
-  "name": "theme-catalog",
-  "private": true,
-  "version": "0.0.0",
+  "name": "theme-catalog-kit",
+  "version": "0.1.0",
+  "description": "Pick a preset palette or craft a custom one, then generate ready-to-paste theme code (CSS variables, button styles, Tailwind config) for your framework.",
   "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "themes",
+    "design-tokens",
+    "css-variables",
+    "color-palette",
+    "tailwind",
+    "code-generator"
+  ],
+  "main": "./dist/lib/index.js",
+  "module": "./dist/lib/index.js",
+  "types": "./dist/lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/lib/index.d.ts",
+      "import": "./dist/lib/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:lib": "tsc -p tsconfig.lib.json && node scripts/copy-data.mjs",
+    "prepublishOnly": "npm run build:lib",
     "lint": "eslint .",
     "preview": "vite preview"
   },
