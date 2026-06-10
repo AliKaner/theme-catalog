@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames';
+import { generateThemeCode } from '../../lib';
 import type { ThemeCardProps } from './ThemeCard.types';
 import type { ThemeVariant } from '../../pages/ThemeCatalog/ThemeCatalog.types';
 import styles from './ThemeCard.module.scss';
@@ -8,6 +9,9 @@ import styles from './ThemeCard.module.scss';
 const ThemeCard = (props: ThemeCardProps) => {
   // Props destructuring
   const { theme, isActive = false, onClick, isApplied = false, onApply } = props;
+
+  // Tracks the brief "Copied!" state after copying the theme's CSS.
+  const [copied, setCopied] = useState<boolean>(false);
 
   // Type inferred from useTranslation hook as per standard library return values.
   const { t } = useTranslation();
@@ -45,6 +49,19 @@ const ThemeCard = (props: ThemeCardProps) => {
     e.stopPropagation();
     if (onApply) {
       onApply(theme.id);
+    }
+  };
+
+  // Copy this theme's ready-to-use global CSS straight to the clipboard.
+  const handleCopyClick = async (e: React.MouseEvent<HTMLButtonElement>): Promise<void> => {
+    e.stopPropagation();
+    try {
+      const [file] = generateThemeCode(theme, 'css');
+      await navigator.clipboard.writeText(file.content);
+      setCopied(true);
+      window.setTimeout((): void => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
     }
   };
 
@@ -97,8 +114,8 @@ const ThemeCard = (props: ThemeCardProps) => {
             >
               {isApplied ? t('catalog.selected') : t('catalog.selectTheme')}
             </button>
-            <button type="button" className={styles.outlineButton}>
-              {t('catalog.previewButton')}
+            <button type="button" className={styles.outlineButton} onClick={handleCopyClick}>
+              {copied ? t('catalog.copied') : t('catalog.copyCss')}
             </button>
           </div>
         </main>

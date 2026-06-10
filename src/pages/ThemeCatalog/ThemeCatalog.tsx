@@ -181,7 +181,9 @@ const ThemeCatalog = (props: ThemeCatalogProps) => {
         )}
 
         {/* Copy-to-your-project code export panel (VSCode-like tabbed view) */}
-        <CodeExportPanel theme={appliedTheme} />
+        <div id="theme-export">
+          <CodeExportPanel theme={appliedTheme} />
+        </div>
       </main>
 
       {/* Mini App Preview Banner at Bottom showing dynamic styling */}
@@ -193,8 +195,14 @@ const ThemeCatalog = (props: ThemeCatalogProps) => {
             </h3>
             <p>{appliedTheme.desc}</p>
           </div>
-          <button type="button" className={styles.bannerActionButton}>
-            {t('catalog.previewButton')}
+          <button
+            type="button"
+            className={styles.bannerActionButton}
+            onClick={(): void => {
+              document.getElementById('theme-export')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }}
+          >
+            {t('catalog.getCode')}
           </button>
         </div>
       </footer>
